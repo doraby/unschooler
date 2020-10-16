@@ -1,20 +1,36 @@
-const choise = document.querySelector("[data-spec-form]");
+const choise = document.getElementsByClassName('profession-choise')[1];
 const choiseDisplay = document.querySelector('[data-spec-display]');
 
 if (localStorage.spec != undefined) {
   choiseDisplay.innerText = localStorage.spec;
 }
 
-choise.addEventListener('click', (event) => {
-  if (event.target.dataset.spec != undefined) {
-    localStorage.spec = event.target.innerText;
+choise.addEventListener('click', (e) => {
+  if (e.target.dataset.spec != undefined) {
+    localStorage.spec = e.target.innerText;
     choiseDisplay.innerText = localStorage.spec;
   }
 });
 
 const prof = document.getElementsByClassName('prof-menu')[0];
-prof.addEventListener("mouseenter", showProf, false);
+const professionList = document.getElementsByClassName('prof-menu-list')[0];
+prof.addEventListener('mouseenter', showProf, false);
+prof.addEventListener('mouseleave', hideProf, false);
 
 function showProf() {
-  prof.getElementsByClassName('prof-menu-list')[0].setAttribute
+  professionList.style.height='auto';
+  professionList.addEventListener('click', choiseProf, false);
+}
+
+function hideProf() {
+  professionList.style.height='0';
+  professionList.removeEventListener('click', choiseProf);
+}
+
+function choiseProf(e) {
+  if (e.target.dataset.spec != undefined) {
+    localStorage.spec = e.target.innerText;
+    choiseDisplay.innerText = localStorage.spec;
+    hideProf();
+  }
 }

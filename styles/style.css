@@ -98,7 +98,11 @@
 }
 
 .prof-menu-list {
-  display: none;
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: 1;
+  height: 0;
+  overflow: hidden;
+  background-color: #89CBD7;
 }

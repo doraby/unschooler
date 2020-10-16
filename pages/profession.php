@@ -18,7 +18,7 @@
         </div>
         <div>
           <video src=""></video>
-          <ul class="profession-choise" data-spec-form>
+          <ul class="profession-choise">
             <li data-spec>Web-дизайнер</li>
             <li data-spec>HTML&CSS</li>
             <li data-spec>Верстальщик</li>
