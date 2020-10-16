@@ -12,8 +12,9 @@ choise.addEventListener('click', (event) => {
   }
 });
 
-const prof = document.getElementsByClassName('prof-menu');
-
+const prof = document.getElementsByClassName('prof-menu')[0];
 prof.addEventListener("mouseenter", showProf, false);
 
-function showProf(e) {}
+function showProf() {
+  prof.getElementsByClassName('prof-menu-list')[0].setAttribute
+}
