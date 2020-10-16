@@ -11,3 +11,9 @@ choise.addEventListener('click', (event) => {
     choiseDisplay.innerText = localStorage.spec;
   }
 });
+
+const prof = document.getElementsByClassName('prof-menu');
+
+prof.addEventListener("mouseenter", showProf, false);
+
+function showProf(e) {}
