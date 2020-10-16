@@ -13,12 +13,21 @@
       <?php include ("blocks/header.php");?>
       <main class="profession-main">
         <div>
-          <div data-spec-display>Выбор</div>
+          <?php include ("blocks/prof-menu.php");?>
           <p>Пройди курс профориентации и выбери своё направление</p>
         </div>
         <div>
           <video src=""></video>
-          <ul>
+          <ul class="profession-choise" data-spec-form>
+            <li data-spec>Web-дизайнер</li>
+            <li data-spec>HTML&CSS</li>
+            <li data-spec>Верстальщик</li>
+            <li data-spec>Frontend-Программист</li>
+            <li data-spec>Backend-Программист</li>
+            <li data-spec>Тестировщик</li>
+            <li data-spec>Менеджер проектов</li>
+            <li data-spec>Менеджер продукта</li>
+            <li data-spec>Бизнес аналитик</li>
           </ul>
           <button><p>arsdgatgsgysdrjd4etseu6</p></button>
         </div>

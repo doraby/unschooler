@@ -84,3 +84,20 @@
   justify-content: space-between;
   width: auto;
 }
+
+.profession-choise {
+  list-style-type: none;
+}
+
+.profession-choise:hover {
+  cursor: pointer;
+}
+
+.prof-menu {
+  position: relative;
+}
+
+.prof-menu-list {
+  position: absolute;
+  z-index: 1;
+}
