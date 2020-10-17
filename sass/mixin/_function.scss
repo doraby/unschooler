@@ -1,0 +1,22 @@
+@function rem($size) {
+  $remSize: $size / 16;
+  @return #{$remSize}rem;
+}
+
+@function em($size) {
+  $emSize: $size / 16;
+  @return #{$emSize}em;
+}
+
+@function vw($target, $width: 1366) {
+  $vw-context: (($width*.01) * 1);
+  @return ($target/$vw-context) * 1vw;
+}
+@function vh($target, $height: 1366) {
+  $hw-context: $height*.01;
+  @return ($target/$hw-context) * 1vh;
+}
+
+@function letter-spacing($ps, $size) {
+  @return $ps * $size / 1000;
+}

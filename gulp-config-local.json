@@ -1,0 +1,26 @@
+{
+    "localServer": "unschooler.loc",
+    "globalServer": "unschooler.loc",
+    "sass": {
+        "watch": "./sass/**/*.scss",
+        "src": "./sass/**/*.scss",
+        "dest": "./css",
+        "map": "./"
+    },
+    "sprite": {
+        "rootSprite": "images/sprite/*.png",
+        "imagesSprite": "./images",
+        "cssSprite": "./sass/sprite"
+    },
+    "svg": {
+        "src": "./images/**/*.svg",
+        "dest": "./images"
+    },
+    "imagesMin": {
+        "src": "./images/**/*.{jpg,gif,png,jpeg}",
+        "dest": "./images",
+        "srcTest": "./imagesTest/**/*.{jpg,gif,png,jpeg}",
+        "destTest": "./imagesTest"
+    },
+    "templatesPath": "./**/*.php"
+}
