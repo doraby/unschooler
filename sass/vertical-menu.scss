@@ -1,6 +1,6 @@
 .vertical-menu {
   position: sticky;
-  display: flex;
+  display: var(--display-wide);
   flex-direction: column;
   justify-content: space-between;
   width: 50px;

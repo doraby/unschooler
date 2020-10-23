@@ -4,6 +4,21 @@
   box-sizing: border-box;
 }
 
+:root {
+  --display-wide: flex;
+  --display-narrow: none;
+}
+@media (max-width: 1000px) {
+  :root {
+  --display-wide: none;
+  --display-narrow: flex;
+  }
+}
+
+body {
+  overflow:hidden;
+}
+
 .wrapper {
   display: flex;
   max-width: 1280px;

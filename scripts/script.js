@@ -1,3 +1,4 @@
+//отображение выбранного направления
 const choise = document.getElementsByClassName('profession-choise')[1];
 const choiseDisplay = document.querySelector('[data-spec-display]');
 
@@ -34,3 +35,28 @@ function choiseProf(e) {
     hideProf();
   }
 }
+
+//Бургер
+const menu = document.querySelector('.menu');
+const burgerBtn = document.querySelector('.burger-btn');
+const closeBurgerBtn = document.querySelector('.cross-btn');
+let leftPosition = 100; //menu.style.left;
+
+function moveOn() {
+  if (leftPosition > 0) {
+    leftPosition -= 1;
+    menu.style.left = leftPosition + "vw";
+    setTimeout(moveOn, 3);
+  }
+}
+
+function moveOff() {
+  if (leftPosition < 100) {
+    leftPosition += 1;
+    menu.style.left = leftPosition + "vw";
+    setTimeout(moveOff, 3);
+  }
+}
+
+burgerBtn.addEventListener('click', moveOn);
+closeBurgerBtn.addEventListener('click', moveOff);

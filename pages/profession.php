@@ -8,6 +8,7 @@
 </head>
 <body>
   <div class="wrapper">
+    <?php include ("../blocks/menu.php");?>
     <?php include ("../blocks/vertical_menu.php");?>
     <div class="body">
       <?php include ("../blocks/header.php");?>
