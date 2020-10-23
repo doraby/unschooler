@@ -1,0 +1,43 @@
+:root {
+  --display-wide: flex;
+  --display-narrow: none;
+}
+
+@media (max-width: 1000px) {
+  :root {
+  --display-wide: none;
+  --display-narrow: flex;
+  }
+}
+
+.header {
+  display: block;
+  justify-content: flex-start;
+  height: 80px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.nav-link {
+  display: none;
+  list-style-type: none;  
+}
+.nav-link > li {
+  padding: 0 15px;
+}
+.nav-link > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+.user {
+  display: var(--display-wide);
+}
+
+.burger-btn {
+  display: none;
+  height: 13px;
+  margin-right: 20px;
+}

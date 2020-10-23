@@ -1,3 +1,5 @@
-@import "mixin/mixin";
-@import "mixin/function";
-@import "reset";
+@import "all";
+@import "_header";
+@import "_menu";
+@import "vertical-menu";
+@import "footer";

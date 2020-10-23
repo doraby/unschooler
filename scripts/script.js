@@ -11,7 +11,7 @@ choise.addEventListener('click', (e) => {
     choiseDisplay.innerText = localStorage.spec;
   }
 });
-
+/* Выпдающее меню выбора профессии*/
 const prof = document.getElementsByClassName('prof-menu')[0];
 const professionList = document.getElementsByClassName('prof-menu-list')[0];
 prof.addEventListener('mouseenter', showProf, false);

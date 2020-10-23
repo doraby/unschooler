@@ -1,0 +1,46 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+}
+
+.profession-main {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+}
+
+.profession-choise {
+  list-style-type: none;
+}
+
+.profession-choise:hover {
+  cursor: pointer;
+}
+
+.prof-menu {
+  position: relative;
+}
+
+.prof-menu-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 0;
+  overflow: hidden;
+  background-color: #89CBD7;
+}
