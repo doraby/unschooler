@@ -7,7 +7,7 @@
   --display-wide: flex;
   --display-narrow: none; }
 
-@media (max-width: 1000px) {
+@media (max-width: 500px) {
   :root {
     --display-wide: none;
     --display-narrow: flex; } }
@@ -17,7 +17,8 @@ body {
 .wrapper {
   display: flex;
   max-width: 1280px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  min-height: 100vh; }
 
 .body {
   display: flex;
@@ -59,14 +60,16 @@ body {
   justify-content: space-between;
   margin-top: 20px; }
 
-.nav-link {
+.nav-menu {
   display: var(--display-wide);
   list-style-type: none; }
-  .nav-link > li {
-    padding: 0 15px; }
-    .nav-link > li > a {
-      text-decoration: none;
-      color: black; }
+
+.nav-menu-obj {
+  padding: 0 15px; }
+
+.nav-menu-link {
+  text-decoration: none;
+  color: black; }
 
 .user {
   display: var(--display-wide); }
@@ -75,6 +78,9 @@ body {
   display: var(--display-narrow);
   height: 13px;
   margin-right: 20px; }
+
+.burger-btn:hover {
+  cursor: pointer; }
 
 .menu {
   display: var(--display-narrow);
@@ -85,7 +91,10 @@ body {
   width: 100vw;
   height: 100vh;
   z-index: 5;
-  background-color: blueviolet; }
+  background-color: cornsilk; }
+
+.cross-btn:hover {
+  cursor: pointer; }
 
 .menu-nav {
   display: flex;
