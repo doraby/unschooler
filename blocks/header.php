@@ -1,13 +1,13 @@
 <header class="header">
   <nav class="nav">
-    <ul class="nav-link">
-      <li><a href="/pages/profession.php">Профессия</a></li>
-      <li><img src="/assets/icon/Union.png" alt=""></li>
-      <li><a href="">Курсы</a></li>
-      <li><img src="/assets/icon/Union.png" alt=""></li>
-      <li><a href="">Проекты</a></li>
-      <li><img src="/assets/icon/Union.png" alt=""></li>
-      <li><a href="">Работа</a></li>
+    <ul class="nav-menu">
+      <li class="nav-menu-obj"><a class="nav-menu-link" href="/pages/profession.php">Профессия</a></li>
+      <li class="nav-menu-obj"><img src="/assets/icon/Union.png" alt=""></li>
+      <li class="nav-menu-obj"><a class="nav-menu-link" href="">Курсы</a></li>
+      <li class="nav-menu-obj"><img src="/assets/icon/Union.png" alt=""></li>
+      <li class="nav-menu-obj"><a class="nav-menu-link" href="">Проекты</a></li>
+      <li class="nav-menu-obj"><img src="/assets/icon/Union.png" alt=""></li>
+      <li class="nav-menu-obj"><a class="nav-menu-link" href="">Работа</a></li>
     </ul>
     <div class="user">User</div>
     <img class="burger-btn" src="/assets/icon/sandwitch_bttn.png" alt="">
