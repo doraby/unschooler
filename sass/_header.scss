@@ -1,0 +1,126 @@
+@import url(//db.onlinewebfonts.com/c/575fc498ad34ad0f411e618dad9ed36a?family=Graphik+LC+Web+Regular);
+@font-face {font-family: "Graphik LC Web Regular"; src: url("//db.onlinewebfonts.com/t/575fc498ad34ad0f411e618dad9ed36a.eot"); src: url("//db.onlinewebfonts.com/t/575fc498ad34ad0f411e618dad9ed36a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/575fc498ad34ad0f411e618dad9ed36a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/575fc498ad34ad0f411e618dad9ed36a.woff") format("woff"), url("//db.onlinewebfonts.com/t/575fc498ad34ad0f411e618dad9ed36a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/575fc498ad34ad0f411e618dad9ed36a.svg#Graphik LC Web Regular") format("svg"); }
+
+:root {
+  --display-desctop: flex;
+  --display-mobile: none;
+  --arrow-opacity: 1;
+}
+@media (max-width: 1280px) {
+  :root {
+  --arrow-opacity: 0.5;
+  }
+}
+@media (max-width: 1000px) {
+  :root {
+  --display-desctop: none;
+  --display-mobile: flex;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 20px;
+  height: 80px;
+  overflow:hidden;
+}
+
+.header__menu {
+  display: var(--display-desctop);
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.header__menu_obj {
+  padding: 0 15px;
+  justify-content: baseline;
+}
+
+.menu_link {
+  text-decoration: none;
+}
+
+.header__menu_arrow {
+  width: 18px;
+  padding-top: 12px;
+  opacity: var(--arrow-opacity);
+}
+
+.header__logo {
+  display: var(--display-mobile);
+  margin-left: 22px;
+}
+
+.header__autorization {
+  display: var(--display-desctop);
+  margin-right: 20px;
+}
+.header__autorization:hover {
+  cursor: pointer;
+}
+
+.header__burger-btn {
+  display: var(--display-mobile);
+  margin-right: 20px;
+  justify-self: flex-end;
+}
+.header__burger-btn:hover {
+  cursor: pointer;
+}
+
+.menu {
+  display: var(--display-mobile);
+  position: absolute;
+  top: 0;
+  left: 100vw;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 20px;
+  z-index: 5;
+  background-color: white;
+}
+
+.cross-btn {
+  align-self: flex-end;
+  margin: 23px 24px 0 0;
+  width: 25px;
+}
+.cross-btn:hover {
+  cursor: pointer;
+}
+
+.menu__nav {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin-left: 60px;
+}
+
+.menu_obj {
+  padding-top: 40px;
+}
+
+.menu-social {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  list-style-type: none;
+  margin: auto 0 52px 60px;
+}
+
+.menu__socials_obj {
+  margin-left: 38px;
+}
+
+.main-text-1 {
+  font-family: 'Graphik LC';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 160%;
+  color:#242938;
+}
