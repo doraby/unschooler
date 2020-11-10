@@ -1,0 +1,171 @@
+/* Это добавить в шапку файла для подключения шрифтов
+            так пропсывать шрифта:
+font-family: 'Anonymous Pro';   и    font-family: 'Graphik'; */
+
+
+/* <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet prefetch" href="https://cdn.rawgit.com/mfd/e7842774e037edf15919037594a79b2b/raw/665bdfc532094318449f1010323c84013d5af953/graphik.css">
+    */
+.h1, .h2, .h3, .h4{
+    font-family: 'Anonymous Pro';
+    font-weight: 700;
+}
+.h1{
+    font-size: 80px;
+    line-height: 60px;
+}
+.h2{
+    font-size: 36px;
+    line-height: 36px;
+}
+.h3{
+    font-size: 32px;
+    line-height: 32px; 
+}
+.h4{
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.btnLarge{
+    width: 333px;
+    height: 93px;
+    border: 4px solid black;
+    border-radius: 60px;
+}
+.btnMedium{
+    width: 225px;
+    height: 70px;
+    border: 3px solid black;
+    border-radius: 50px;
+}
+.btnSmall{
+    width: 158px;
+    height: 46px;
+    border: 2px solid black;
+    border-radius: 33.96px;
+}
+
+.btnLarge:hover, .btnMedium:hover, .btnSmall:hover {
+    box-shadow:
+    2px 5px white,
+    2px 7px black;
+  -webkit-transform: translateY(-7px);
+  -moz-transform: translateY(-7px);
+  transform: translateY(-7px);
+  background-color: #FF5F49;
+  border: none;
+  }
+  .btnLarge:focus, .btnMedium:focus, .btnSmall:focus{
+      background-color: white;
+      border-color:#FF5F49 ;
+      outline: none;
+  }
+  .btnLarge:active, .btnMedium:active, .btnSmall:active{
+    border: none;
+    background-color: #FF5F49;
+  }
+  .btnLarge:disabled, .btnMedium:disabled, .btnSmall:disabled{
+      opacity: 0.5;
+  }
+.textLage, .textLageregular, .textMain1, .TextMain2, .TextSmall{
+    font-family: 'Graphik';
+}
+.textLage, .textLageregular{
+    font-size: 24px;
+    line-height: 33px;
+}
+.textLage, .TextMain2{
+    font-weight: 600;
+}
+ 
+.textLageregular, .textMain1, .TextSmall{
+    font-weight: normal;
+}
+ 
+.link{
+    text-decoration-line: underline;
+}
+ 
+.textMain1{
+    font-size: 20px;
+    font-weight: 160%;
+}
+ 
+.TextMain2{
+    font-size: 18px;
+    line-height: 22px;
+}
+ 
+.TextSmall{
+    font-size: 16px;
+    font-weight: 22px;
+}
+.inputText{
+    width: 497px;
+    height: 54px;
+    outline: none;
+    font-family: 'Graphik';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    border: 0px;
+    border-bottom: 2px solid black;
+    background-color: #F4F4F4;
+}
+.inputText:hover{
+    border: 3px solid #89CBD7;
+}
+
+/* laptop */
+@media  (max-width: 768px){
+    .h1{
+        font-size: 60px;
+        line-height: 60px; 
+
+    }
+    .h2{
+        font-size: 30px;
+        line-height: 60px; 
+    }
+    .h3{
+        font-size: 23px;
+        line-height: 60px; 
+    }
+    .btnLarge{
+        width: 225px;
+        height: 70px;
+        border: 3px solid black;
+        border-radius: 50px;
+    }
+    .btnMedium{
+        width: 158px;
+        height: 46px;
+        border: 2px solid black;
+        border-radius: 33.96px;
+    }
+    .textLageregular{
+        font-family: 'Anonymous Pro';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .textMain1{
+        font-family: 'Anonymous Pro';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .textMain2{
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .footerlinks{
+        font-family: 'Graphik';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 29.4px;
+    }
+}
+
+
