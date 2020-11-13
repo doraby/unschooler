@@ -1,5 +1,5 @@
 //отображение выбранного направления
-const choise = document.getElementsByClassName('profession-choise')[1];
+const choise = document.getElementsByClassName('profession-choise')[0];
 const choiseDisplay = document.querySelector('[data-spec-display]');
 
 function setProfession() {
@@ -11,8 +11,8 @@ setProfession();
 
 function chooseProf (e) {
   if (e.target.dataset.spec != undefined) {
-    localStorage.spec = e.target.innerText;
-    choiseDisplay.innerText = localStorage.spec;
+    localStorage.getItem(spec) = e.target.innerText;
+    choiseDisplay.innerText = localStorage.getItem(spec);
   }
 }
 
@@ -48,7 +48,7 @@ const burgerBtn = document.querySelector('.header__burger-btn');
 const closeBurgerBtn = document.querySelector('.cross-btn');
 let leftPosition = 100; //menu.style.left;
 
-function moveOn() {
+/*function moveOn() {
   if (leftPosition > 0) {
     leftPosition -= 1;
     menu.style.left = leftPosition + "vw";
@@ -62,7 +62,18 @@ function moveOff() {
     menu.style.left = leftPosition + "vw";
     setTimeout(moveOff, 1);
   }
+}*/
+
+function moveOn() {
+  menu.classList.add("menu__on");
+  alert(menu.classList.contains("menu__on"));
 }
 
+function moveOut() {
+  menu.classList.add("menu__out");
+  menu.classList.remove("menu__on");
+}
+
+
 burgerBtn.addEventListener('click', moveOn);
-closeBurgerBtn.addEventListener('click', moveOff);
+closeBurgerBtn.addEventListener('click', moveOut);

@@ -1,4 +1,47 @@
 @import url(//db.onlinewebfonts.com/c/575fc498ad34ad0f411e618dad9ed36a?family=Graphik+LC+Web+Regular);
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  overflow: hidden; }
+
+.wrapper {
+  display: flex;
+  max-width: 1280px;
+  margin: 0 auto;
+  min-height: 100vh; }
+
+.body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%; }
+
+.profession-main {
+  display: flex;
+  justify-content: space-between;
+  width: auto; }
+
+.profession-choise {
+  list-style-type: none; }
+
+.profession-choise:hover {
+  cursor: pointer; }
+
+.prof-menu {
+  position: relative; }
+
+.prof-menu-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 0;
+  overflow: hidden;
+  background-color: #89CBD7; }
+
 @font-face {
   font-family: "Graphik LC Web Regular";
   src: url("//db.onlinewebfonts.com/t/575fc498ad34ad0f411e618dad9ed36a.eot");
@@ -109,3 +152,35 @@
   font-size: 20px;
   line-height: 160%;
   color: #242938; }
+
+.vertical-menu {
+  position: sticky;
+  display: var(--display-wide);
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50px;
+  height: 100vh; }
+
+.label {
+  transform: rotate(270deg);
+  margin-top: 150px;
+  background-color: khaki; }
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  list-style-type: none; }
+
+.social > li {
+  padding: 10px 0; }
+
+.footer {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-between;
+  width: auto;
+  height: 100px;
+  margin: auto 0 0 0;
+  background-color: #89CBD7; }
