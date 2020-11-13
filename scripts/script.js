@@ -1,28 +1,18 @@
 //отображение выбранного направления
-const choise = document.getElementsByClassName('profession-choise')[0];
-const choiseDisplay = document.querySelector('[data-spec-display]');
+const choiseDisplay = document.getElementsByClassName('profession__display')[0];
 
 function setProfession() {
-  if (localStorage.spec != undefined) {
-    choiseDisplay.innerText = localStorage.spec;
+  if (localStorage.getItem('spec') != undefined) {
+    choiseDisplay.innerText = localStorage.getItem('spec');
   }
 }
 setProfession();
 
-function chooseProf (e) {
-  if (e.target.dataset.spec != undefined) {
-    localStorage.getItem(spec) = e.target.innerText;
-    choiseDisplay.innerText = localStorage.getItem(spec);
-  }
-}
-
-choise.addEventListener('click', chooseProf);
-
 /* Выпдающее меню выбора профессии*/
-const prof = document.getElementsByClassName('prof-menu')[0];
-const professionList = document.getElementsByClassName('prof-menu-list')[0];
+const prof = document.getElementsByClassName('profession__display')[0];
+const professionList = document.getElementsByClassName('profession__menu')[0];
 prof.addEventListener('mouseenter', showProf, false);
-prof.addEventListener('mouseleave', hideProf, false);
+professionList.addEventListener('mouseleave', hideProf, false);
 
 function showProf() {
   professionList.style.height='auto';
@@ -35,9 +25,9 @@ function hideProf() {
 }
 
 function choiseProf(e) {
-  if (e.target.dataset.spec != undefined) {
-    localStorage.spec = e.target.innerText;
-    choiseDisplay.innerText = localStorage.spec;
+  if (e.target.classList.contains('profession__item')) {
+    localStorage.setItem('spec', e.target.innerText);
+    choiseDisplay.innerText = localStorage.getItem('spec');
     hideProf();
   }
 }
@@ -46,32 +36,15 @@ function choiseProf(e) {
 const menu = document.querySelector('.menu');
 const burgerBtn = document.querySelector('.header__burger-btn');
 const closeBurgerBtn = document.querySelector('.cross-btn');
-let leftPosition = 100; //menu.style.left;
-
-/*function moveOn() {
-  if (leftPosition > 0) {
-    leftPosition -= 1;
-    menu.style.left = leftPosition + "vw";
-    setTimeout(moveOn, 1);
-  }
-}
-
-function moveOff() {
-  if (leftPosition < 100) {
-    leftPosition += 1;
-    menu.style.left = leftPosition + "vw";
-    setTimeout(moveOff, 1);
-  }
-}*/
 
 function moveOn() {
-  menu.classList.add("menu__on");
-  alert(menu.classList.contains("menu__on"));
+  menu.classList.add("menu_on");
+  menu.classList.remove("menu_out");
 }
 
 function moveOut() {
-  menu.classList.add("menu__out");
-  menu.classList.remove("menu__on");
+  menu.classList.add("menu_out");
+  menu.classList.remove("menu_on");
 }
 
 
