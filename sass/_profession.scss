@@ -1,0 +1,25 @@
+.profession {
+  position: relative;
+}
+
+.profession__display {
+  width: fit-content;
+}
+
+.profession__menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 0;
+  overflow: hidden;
+  background-color: #89CBD7;
+}
+
+.profession__menu__list {
+  list-style-type: none;
+}
+
+.profession__menu__list:hover {
+  cursor: pointer;
+}
