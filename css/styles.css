@@ -11,24 +11,24 @@ h1, h2, h3, h4 {
   font-weight: 700; }
 
 h1 {
-  font-size: 80px;
-  line-height: 60px; }
+  font-size: 5rem;
+  line-height: 3.75rem; }
 
 h2 {
-  font-size: 36px;
-  line-height: 36px; }
+  font-size: 2.25rem;
+  line-height: 2.25rem; }
 
 h3 {
-  font-size: 32px;
-  line-height: 32px; }
+  font-size: 2rem;
+  line-height: 2rem; }
 
 h4 {
-  font-size: 24px;
-  line-height: 24px; }
+  font-size: 1.5rem;
+  line-height: 1.5rem; }
 
 p {
   font-family: 'Graphik';
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 160%; }
 
 a {
@@ -37,17 +37,17 @@ a {
   color: black; }
 
 .button_size_l {
-  padding: 31px 70px;
+  padding: 2rem 4.37rem;
   border: 4px solid black;
-  border-radius: 60px; }
+  border-radius: 3.75rem; }
 
 .button_size_m {
   border: 3px solid black;
-  border-radius: 50px; }
+  border-radius: 3.12rem; }
 
 .button_size_s {
   border: 2px solid black;
-  border-radius: 33.94px; }
+  border-radius: 2.12rem; }
 
 .button_size_l:hover, .button_size_m:hover, .button_size_s:hover {
   box-shadow: 2px 5px white, 2px 7px black;
@@ -69,12 +69,12 @@ a {
 .button_size_l:disabled, .button_size_m:disabled, .button_size_s:disabled {
   opacity: 0.5; }
 
-.text_size_, .textLageregular, .TextMain2, .TextSmall {
+.text_size_l, .textLageregular, .TextMain2, .text_size_s {
   font-family: 'Graphik'; }
 
-.textLage, .textLageregular {
-  font-size: 24px;
-  line-height: 33px; }
+.text_size_l, .textLageregular {
+  font-size: 1.5rem;
+  line-height: 2.06rem; }
 
 .textLage, .TextMain2 {
   font-weight: 600; }
@@ -83,21 +83,20 @@ a {
   font-weight: normal; }
 
 .TextMain2 {
-  font-size: 18px;
-  line-height: 22px; }
+  font-size: 1.12rem;
+  line-height: 1.37rem;
+  background-color: black; }
 
-.TextSmall {
-  font-size: 16px;
-  font-weight: 22px; }
+.text_size_s {
+  font-size: 1rem;
+  font-weight: 1.37rem; }
 
 .inputText {
-  width: 497px;
-  height: 54px;
   outline: none;
   font-family: 'Graphik';
   font-weight: 400;
-  font-size: 22px;
-  line-height: 32px;
+  font-size: 1.37rem;
+  line-height: 2rem;
   border: 0px;
   border-bottom: 2px solid black;
   background-color: #F4F4F4; }
