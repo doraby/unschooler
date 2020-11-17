@@ -73,13 +73,18 @@ function setCard() {
         title = document.createElement('div'),
         author = document.createElement('div'),
         difficulty = document.createElement('div'),
-        direction = document.createElement('div')
+        direction = document.createElement('div'),
+        img = document.createElement('img');
 
     card.className = 'card';
+    //card.style.backgroundImage = `${courses.img}`;
     title.innerHTML = courses.title;
     author.innerText = courses.author;
     difficulty.innerText = courses.difficulty;
     direction.innerText = courses.direction;
+    img.src = courses.img;
+    img.className = 'card__img';
+    card.appendChild(img);
     card.appendChild(title);
     card.appendChild(author);
     card.appendChild(difficulty);

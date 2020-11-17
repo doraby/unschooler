@@ -5,6 +5,23 @@
 }
 
 .card {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
   width: 200px;
+  height: 150px;
   border: 1px solid black;
+  align-self: stretch;
+  padding: 10px;
+  font-family: Graphik;
+}
+
+.card__img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 10%;
+  height: 100%;
+  opacity: 0.5;
 }

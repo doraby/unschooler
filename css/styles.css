@@ -1,4 +1,126 @@
+@charset "UTF-8";
+/* Это добавить в шапку файла для подключения шрифтов
+            так пропсывать шрифта:
+font-family: 'Anonymous Pro';   и    font-family: 'Graphik'; */
+/* <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet prefetch" href="https://cdn.rawgit.com/mfd/e7842774e037edf15919037594a79b2b/raw/665bdfc532094318449f1010323c84013d5af953/graphik.css">
+    */
 @import url(//db.onlinewebfonts.com/c/575fc498ad34ad0f411e618dad9ed36a?family=Graphik+LC+Web+Regular);
+h1, h2, h3, h4 {
+  font-family: 'Anonymous Pro';
+  font-weight: 700; }
+
+h1 {
+  font-size: 5rem;
+  line-height: 3.75rem; }
+
+h2 {
+  font-size: 2.25rem;
+  line-height: 2.25rem; }
+
+h3 {
+  font-size: 2rem;
+  line-height: 2rem; }
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 1.5rem; }
+
+p {
+  font-family: 'Graphik';
+  font-size: 1.25rem;
+  font-weight: 160%; }
+
+a {
+  font-family: 'Graphik';
+  text-decoration-line: underline;
+  color: black;
+  font-size: 1.25rem;
+  font-weight: 2rem; }
+
+.a_large {
+  font-family: 'Graphik';
+  text-decoration-line: underline;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 2.06rem; }
+
+.button_size_l {
+  padding: 2rem 4.37rem;
+  border: 4px solid black;
+  border-radius: 3.75rem; }
+
+.button_size_m {
+  padding: 1.3rem 2.5rem;
+  border: 3px solid black;
+  border-radius: 3.12rem;
+  transition: 0.5s; }
+
+.button_size_s {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid black;
+  border-radius: 2.12rem;
+  transition: 0.5s; }
+
+.button_size_l:hover, .button_size_m:hover, .button_size_s:hover {
+  box-shadow: 2px 5px white, 2px 7px black;
+  -webkit-transform: translateY(-7px);
+  -moz-transform: translateY(-7px);
+  transform: translateY(-7px);
+  background-color: #FF5F49;
+  border: none; }
+
+.button_size_l:focus, .button_size_m:focus, .button_size_s:focus {
+  background-color: white;
+  border-color: #FF5F49;
+  outline: none; }
+
+.button_size_l:active, .button_size_m:active, .button_size_s:active {
+  border: none;
+  background-color: #FF5F49; }
+
+.button_size_l:disabled, .button_size_m:disabled, .button_size_s:disabled {
+  opacity: 0.5; }
+
+.text_size_l {
+  font-size: 1.5rem;
+  line-height: 2.06rem; }
+
+.text_size_l_bold {
+  font-size: 1.5rem;
+  line-height: 2.06rem;
+  font-weight: 600; }
+
+.p_bold {
+  font-size: 1.12rem;
+  line-height: 1.37rem;
+  font-weight: 600; }
+
+.text_size_s {
+  font-size: 1rem;
+  font-weight: 1.37rem; }
+
+.text_size_l, .text_size_l_bold, .p_bold, .text_size_s {
+  font-family: 'Graphik'; }
+
+.inputText {
+  padding: 0.5rem 1rem;
+  outline: none;
+  font-family: 'Graphik';
+  font-size: 1.37rem;
+  line-height: 2rem;
+  border: 0px;
+  border-bottom: 2px solid black;
+  background-color: #F4F4F4; }
+
+.inputText:hover {
+  border: 3px solid #89CBD7; }
+
+.example {
+  display: flex;
+  flex-direction: column; }
+
+/* laptop */
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -244,5 +366,21 @@ body {
   flex-wrap: wrap; }
 
 .card {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
   width: 200px;
-  border: 1px solid black; }
+  height: 150px;
+  border: 1px solid black;
+  align-self: stretch;
+  padding: 10px;
+  font-family: Graphik; }
+
+.card__img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 10%;
+  height: 100%;
+  opacity: 0.5; }
