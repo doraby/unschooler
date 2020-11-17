@@ -1,21 +1,18 @@
-{
-  "courses":
-  [
-    {
-      "title":"Speacking club",
-      "author":"Комьюнити",
-      "difficulty":"Легко",
-      "direction":"Design",
-      "link":"",
-      "checked":false
-    },
-    {
-      "title":"Системная грамматика",
-      "author":"Ольга Баланкина",
-      "difficulty":"Средне",
-      "direction":"Fronted",
-      "link":"",
-      "checked":false
-    }
-  ]
-}
+[
+  {
+    "title":"Speacking club",
+    "author":"Комьюнити",
+    "difficulty":"Легко",
+    "direction":"Design",
+    "link":"",
+    "checked":false
+  },
+  {
+    "title":"Системная грамматика",
+    "author":"Ольга Баланкина",
+    "difficulty":"Средне",
+    "direction":"Fronted",
+    "link":"",
+    "checked":false
+  }
+]

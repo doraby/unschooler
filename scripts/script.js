@@ -52,3 +52,39 @@ burgerBtn.addEventListener('click', moveOn);
 closeBurgerBtn.addEventListener('click', moveOut);
 
 // Таблички
+setCard();
+
+function setCard() {
+  let cardURL = '../scripts/books.json',
+      request = new XMLHttpRequest();
+  request.open('GET', cardURL);
+  request.responseType = 'json';
+  request.send();
+  request.onload = function() {
+    let courses = request.response;
+    for (let i = 0; i < courses.length; i++) {
+      card(courses[i]);
+    }
+  }
+
+  function card(courses) {
+    let cardList = document.getElementsByClassName('card__list')[0],
+        card = document.createElement('div'),
+        title = document.createElement('div'),
+        author = document.createElement('div'),
+        difficulty = document.createElement('div'),
+        direction = document.createElement('div')
+
+    card.className = 'card';
+    title.innerHTML = courses.title;
+    author.innerText = courses.author;
+    difficulty.innerText = courses.difficulty;
+    direction.innerText = courses.direction;
+    card.appendChild(title);
+    card.appendChild(author);
+    card.appendChild(difficulty);
+    card.appendChild(direction);
+    cardList.append(card);
+  }
+}
+
