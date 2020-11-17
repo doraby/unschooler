@@ -50,3 +50,5 @@ function moveOut() {
 
 burgerBtn.addEventListener('click', moveOn);
 closeBurgerBtn.addEventListener('click', moveOut);
+
+// Таблички

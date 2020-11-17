@@ -143,9 +143,8 @@ body {
   background-color: white; }
 
 .menu_on {
-  animation-duration: 1s;
-  animation-name: move-on;
-  left: 0; }
+  left: 0;
+  transition: all 1s; }
 
 .menu_out {
   animation-duration: 1s;
