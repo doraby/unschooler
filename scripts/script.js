@@ -87,4 +87,3 @@ function setCard() {
     cardList.append(card);
   }
 }
-

@@ -1,5 +1,7 @@
 .card__list {
-  display: grid;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .card {

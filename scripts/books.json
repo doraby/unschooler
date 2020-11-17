@@ -5,7 +5,8 @@
     "difficulty":"Легко",
     "direction":"Design",
     "link":"",
-    "checked":false
+    "checked":false,
+    "img":""
   },
   {
     "title":"Системная грамматика",
@@ -13,6 +14,7 @@
     "difficulty":"Средне",
     "direction":"Fronted",
     "link":"",
-    "checked":false
+    "checked":false,
+    "img":""
   }
 ]
