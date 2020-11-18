@@ -1,14 +1,19 @@
+.courses-main {
+  display: flex;
+  flex-direction: column;
+}
+
 .card__list {
   display: flex;
-  align-items: flex-start;
   flex-wrap: wrap;
+  align-self: center;
+  margin: auto;
 }
 
 .card {
   position: relative;
   display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  flex-direction: column;
   width: 200px;
   height: 150px;
   border: 1px solid black;
@@ -24,4 +29,36 @@
   right: 10%;
   height: 100%;
   opacity: 0.5;
+}
+
+.card__difficulty {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.card__author {
+  margin-top: 15px;
+  font-size: 0.8rem;
+}
+
+.card__title {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.card__direction {
+  justify-self: end;
+  margin-top: auto;
+  font-size: 0.8rem;
+}
+
+.card__checkbox {
+  position: absolute;
+  z-index: 1;
+  bottom: 15px;
+  right: 15px;
+  padding: 10px !important;
+  border: 0;
+  border-radius: 50%;
+  background-color: blue;
 }

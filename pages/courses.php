@@ -13,7 +13,7 @@
     <?php include ("../blocks/vertical_menu.php");?>
     <div class="body">
       <?php include ("../blocks/header.php");?>
-      <main class="profession-main">
+      <main class="courses-main">
         <div>
           <?php include ("../blocks/profession.php");?>  
           <p>Пройди курс профориентации и выбери своё направление</p>

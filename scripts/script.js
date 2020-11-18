@@ -74,21 +74,28 @@ function setCard() {
         author = document.createElement('div'),
         difficulty = document.createElement('div'),
         direction = document.createElement('div'),
-        img = document.createElement('img');
+        cardImg = document.createElement('img');
+        cardCheckBox = document.createElement('input');
 
     card.className = 'card';
-    //card.style.backgroundImage = `${courses.img}`;
-    title.innerHTML = courses.title;
+    title.innerText = courses.title;
+    title.className = 'text_size_s card__title';
     author.innerText = courses.author;
+    author.className = 'text_size_s card__author';
     difficulty.innerText = courses.difficulty;
+    difficulty.className = 'text_size_s card__difficulty';
     direction.innerText = courses.direction;
-    img.src = courses.img;
-    img.className = 'card__img';
-    card.appendChild(img);
-    card.appendChild(title);
-    card.appendChild(author);
+    direction.className = 'text_size_s card__direction';
+    cardImg.src = courses.img;
+    cardImg.className = 'card__img';
+    cardCheckBox.setAttribute('type', 'checkbox');
+    cardCheckBox.className = 'card__checkbox';
+    card.appendChild(cardImg);
     card.appendChild(difficulty);
+    card.appendChild(author);
+    card.appendChild(title);
     card.appendChild(direction);
+    card.appendChild(cardCheckBox);
     cardList.append(card);
   }
 }

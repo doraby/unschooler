@@ -16,5 +16,23 @@
     "link":"",
     "checked":false,
     "img":"../assets/img/1.jpg"
+  },
+  {
+    "title":"Книги Чихольда по типографике",
+    "author":"Книга",
+    "difficulty":"Легко",
+    "direction":"Web design",
+    "link":"",
+    "checked":false,
+    "img":""
+  },
+  {
+    "title":"Shape up",
+    "author":"Райан Зингер",
+    "difficulty":"Легко",
+    "direction":"Web design",
+    "link":"",
+    "checked":false,
+    "img":""
   }
 ]
