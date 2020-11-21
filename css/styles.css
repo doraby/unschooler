@@ -1,0 +1,31 @@
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+  display: flex; }
+
+.item {
+  width: 20%;
+  border: 1px solid #666;
+  margin: 10px; }
+
+.item_bg {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 100%; }
+
+.item_selected {
+  background-color: #C3E408; }
+
+.item__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px; }
+
+.item__description {
+  margin-bottom: 20px; }
+
+.item__pictute {
+  margin-bottom: 30px; }
+  .item__pictute__img {
+    max-width: 100%; }
