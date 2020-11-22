@@ -209,14 +209,32 @@ body {
 .social > li {
   padding: 10px 0; }
 
-.footer {
+footer {
   display: flex;
-  flex-shrink: 0;
-  justify-content: space-between;
-  width: auto;
-  height: 100px;
-  margin: auto 0 0 0;
+  justify-content: flex-start;
+  padding-left: 10rem;
   background-color: #89CBD7; }
+
+footer p {
+  padding: 1.2rem 0.5rem 0rem 0rem; }
+
+.footer_first_column {
+  padding-top: 2rem;
+  list-style-type: none; }
+
+.footer_second_column {
+  padding-top: 2rem;
+  list-style-type: none;
+  padding-left: 9rem; }
+
+.footer_first_column li {
+  padding-bottom: 1rem; }
+
+.footer_first_column li:nth-child(1) {
+  color: white; }
+
+.footer_second_column li {
+  padding-bottom: 1rem; }
 
 .profession {
   position: relative; }
