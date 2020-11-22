@@ -1,26 +1,39 @@
+/*// Добавить в шапку скрипт  <script src="https://kit.fontawesome.com/8af0e5d19d.js" crossorigin="anonymous"></script>*/
+/*//который даст возможность подкинуть значки с fomt-awesome*/
 .vertical-menu {
-  position: sticky;
-  display: var(--display-desctop);
+  position: fixed;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 50px;
   height: 100vh;
+  width: auto;
+  border-right: 3px solid black;
+  margin-top: 3.12rem;
 }
 
-.label {
+.vertical-menu h3 {
   transform: rotate(270deg);
-  margin-top: 150px;
-  background-color: khaki;
+  margin-top: 4rem;
+  width: 4rem;
+  height: 2rem;
+  overflow: visible;
+  white-space: nowrap;
 }
 
-.social {
+.social{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 10px;
-  list-style-type: none;
+  margin-bottom: 6rem;
 }
+.social ul li{
+  opacity: 0.2;
+}
+.social ul li:hover{
+  opacity: 0.9;
 
-.social > li {
-  padding: 10px 0;
+}
+.social li{
+  padding-top: 2rem;
+  list-style-type: none;
 }

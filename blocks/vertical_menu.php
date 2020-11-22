@@ -1,8 +1,21 @@
 <div class="vertical-menu">
-  <p class="label">unschooler IT</p>
-  <ul class="social">
-    <li><a href=""><img src="/assets/icon/youtube.svg" alt=""></a></li>
-    <li><a href=""><img src="/assets/icon/twitter.svg" alt=""></a></li>
-    <li><a href=""><img src="/assets/icon/facebook.svg" alt=""></a></li>
-  </ul>
+    <h3>
+      unschooler IT
+    </h3>
+
+  <div class="social">
+    <ul>
+      <li>
+        <a href="#"><i class="fab fa-youtube fa-2x" style="color: black"></i></a>
+      </li>
+
+      <li>
+        <a href="#"><i class="fab fa-twitter fa-2x"style="color: black"></i></a>
+      </li>
+
+      <li>
+        <a href="#"><i class="fab fa-facebook-f fa-2x"style="color: black"></i></a>
+      </li>
+    </ul>
+  </div>
 </div>
