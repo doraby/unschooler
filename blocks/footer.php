@@ -8,7 +8,7 @@
     <li class="text_size_s"><a href="#">Telegram - @unschooler</a></li>
   </ul>
   <ul class="footer_second_column text_size_s">
-    <li><a href="#">Web-design</a></li>
+    <li><a href="#">Web-design </a></li>
     <li><a href="#">HTML&CSS</a></li>
     <li><a href="#">Верстальщик</a></li>
     <li><a href="#">Frontend Программист</a></li>
