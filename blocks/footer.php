@@ -1,6 +1,6 @@
 <footer>
   <p>
-    <img src="logo-white.png" alt="">
+    <img src="/assets/icon/logo-white.png" alt="">
   </p>
   <ul class="footer_first_column">
     <li><h4>Unschooler</h4></li>
