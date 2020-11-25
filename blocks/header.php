@@ -1,33 +1,17 @@
-<header class="header">
-  <!--Desctop menu-->
-  <ul class="header__menu">
-    <li class="header__menu__item"><a class="menu__link main-text-1" href="">профессия</a></li>
-    <li class="header__menu__item"><img class="header__menu__arrow" src="/assets/icon/Union.svg" alt=""></li>
-    <li class="header__menu__item"><a class="menu__link main-text-1" href="/pages/courses.php">курсы</a></li>
-    <li class="header__menu__item"><img class="header__menu__arrow" src="/assets/icon/Union.svg" alt=""></li>
-    <li class="header__menu__item"><a class="menu__link main-text-1" href="">проекты</a></li>
-    <li class="header__menu__item"><img class="header__menu__arrow" src="/assets/icon/Union.svg" alt=""></li>
-    <li class="header__menu__item"><a class="menu__link main-text-1" href="">работа</a></li>
-  </ul>
-  <div class="header__autorization main-text-1">Войти</div>
-
-  <!--Mobile items-->
-  <img class="header__logo" src="/assets/icon/logo1.svg" alt="">
-  <img class="header__burger-btn" src="/assets/icon/sandwitch_bttn.svg" alt="">
-
-  <!--Drop-menu-->
-  <div class="menu">
-    <img class="cross-btn" src="/assets/icon/Cross.svg">
-    <ul class="menu__nav">
-      <li><a class="menu__link main-text-1" href="">профессия</a></li>
-      <li class="menu__item"><a class="menu__link main-text-1" href="/pages/courses.php">курсы</a></li>
-      <li class="menu__item"><a class="menu__link main-text-1" href="">проекты</a></li>
-      <li class="menu__item"><a class="menu__link main-text-1" href="">работа</a></li>
+<nav class="menu">
+    <div class="menu-icon"></div>
+    <ul class="menu__list">
+        <li class="menu__list__item">
+            <a href="#" class="menu__list__item__link" title="профессия">профессия</a>
+        </li>
+        <li class="menu__list__item">
+            <a href="#" class="menu__list__item__link" title="курсы">курсы</a>
+        </li>
+        <li class="menu__list__item">
+            <a href="#" class="menu__list__item__link" title="проекты">проекты</a>
+        </li>
+        <li class="menu__list__item">
+            <a href="#" class="menu__list__item__link" title="работа">работа</a>
+        </li>
     </ul>
-    <ul class="menu__social">
-      <li><a href=""><img src="/assets/icon/youtube.svg" alt=""></a></li>
-      <li class="menu__socials__item"><a href=""><img src="/assets/icon/twitter.svg" alt=""></a></li>
-      <li class="menu__socials__item"><a href=""><img src="/assets/icon/facebook.svg" alt=""></a></li>
-    </ul>
-    </div>
-</header>
+</nav>
