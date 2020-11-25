@@ -32,7 +32,7 @@ function choiseProf(e) {
   }
 }
 
-//Бургер
+/*Бургер
 const menu = document.querySelector('.menu');
 const burgerBtn = document.querySelector('.header__burger-btn');
 const closeBurgerBtn = document.querySelector('.cross-btn');
@@ -50,7 +50,7 @@ function moveOut() {
 
 burgerBtn.addEventListener('click', moveOn);
 closeBurgerBtn.addEventListener('click', moveOut);
-
+*/
 /* Таблички
 setCard();
 
