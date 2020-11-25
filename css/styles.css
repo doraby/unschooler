@@ -279,7 +279,8 @@ a {
   display: flex;
   flex-wrap: wrap;
   align-self: center;
-  margin: auto; }
+  margin: auto;
+  padding: 15px; }
 
 .card {
   position: relative;
