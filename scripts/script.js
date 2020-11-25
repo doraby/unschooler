@@ -51,7 +51,7 @@ function moveOut() {
 burgerBtn.addEventListener('click', moveOn);
 closeBurgerBtn.addEventListener('click', moveOut);
 
-// Таблички
+/* Таблички
 setCard();
 
 function setCard() {
@@ -98,4 +98,4 @@ function setCard() {
     card.appendChild(cardCheckBox);
     cardList.append(card);
   }
-}
+}*/

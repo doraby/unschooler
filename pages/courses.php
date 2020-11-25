@@ -9,6 +9,7 @@
   <title>Profession</title>
 </head>
 <body>
+<?php require('../inc/test-data.php'); ?>
   <div class="wrapper">
     <?php include ("../blocks/vertical_menu.php");?>
     <div class="body">
@@ -18,7 +19,11 @@
           <?php include ("../blocks/profession.php");?>  
           <p>Пройди курс профориентации и выбери своё направление</p>
         </div>
-        <div class="card__list"></div>
+        <div class="card__list">
+          <?php foreach ($testData as $item): ?>
+          <?php require('../inc/item-template.php');?>
+          <?php endforeach; ?>
+        </div>
       </main>
       <?php include ("../blocks/footer.php");?>
     </div>
