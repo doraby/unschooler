@@ -57,3 +57,23 @@ a{
 .btn:disabled{
      opacity: 0.5;
 }
+/*large text*/
+.text-size-large{
+    font-size: 1.5rem;
+    line-height: 2.06rem;
+}
+/*Main text*/
+.text-size-medium{
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+/*Main text2*/
+.text-size-small{
+    font-size: 1.12rem;
+    line-height: 1.36rem;
+}
+/*Small text*/
+.text-size-thesmallest{
+    font-size: 1rem;
+    line-height: 1.37rem;
+}
