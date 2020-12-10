@@ -3,7 +3,7 @@
     <img class="logo__png_black" src="/assets/icon/logo-text-black.png" alt="">
   </a>
 
-  <ul class="social">
+  <ul class="social__item">
       <li class="social__svg">
         <a class="social__link" href="#"><img class="icon" src="/assets/icon/youtube.svg" alt=""></a>
      </li>
