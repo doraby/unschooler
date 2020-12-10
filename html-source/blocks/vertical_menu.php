@@ -1,10 +1,9 @@
 <div class="vertical-menu">
   <a class="vertical-menu__logo" href="#" >
-    <img class="logo-text-black" src="/assets/icon/logo-text-black.png" alt="">
+    <img class="logo__png_black" src="/assets/icon/logo-text-black.png" alt="">
   </a>
-  
-  <div class="social">
-    <ul>
+
+  <ul class="social">
       <li class="social__svg">
         <a class="social__link" href="#"><img class="icon" src="/assets/icon/youtube.svg" alt=""></a>
      </li>
@@ -17,5 +16,5 @@
        <a class="social__link" href="#"><img class="icon" src="/assets/icon/facebook.svg" alt=""></a>
      </li>
   </ul>
-  </div>
+
 </div>
