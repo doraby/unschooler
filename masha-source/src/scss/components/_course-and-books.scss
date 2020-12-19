@@ -1,0 +1,61 @@
+.course-and-books {
+    display: flex;
+    padding-left: 7%;
+    transform: translateY(-5%);
+}
+
+.course-and-books__content {
+    position: relative;
+}
+
+.course-and-books__subtitle {
+    top: 10%;
+    left: 12.5%
+}
+
+.course-and-books__arrows {
+    position: absolute;
+    top: 53%;
+    left: 17%;
+
+    width: 575px;
+    height: 615px;
+    background-image: url(../img/course-and-books-arrows.svg);
+    background-repeat: no-repeat;
+}
+
+@media (max-width: $tablet-width) {
+    .course-and-books {
+        padding-left: 15%;
+    }
+
+    .course-and-books__arrows {
+        width: 395px;
+        height: 325px;
+        background-size: contain;
+    }
+}
+
+@media (max-width: $phone-width) {
+    .course-and-books {
+        display: flex;
+        align-self: center;
+        padding: 0;
+        transform: translateY(0%);
+    }
+
+    .course-and-books__content {
+        margin-bottom: 135px;
+    }
+
+    .course-and-books__arrows {
+        top: 45%;
+        left: -8%;
+    
+        width: 325px;
+        height: 320px;
+        background-image: url(../img/course-and-books-arrows-mobile.svg);
+        background-repeat: no-repeat;
+    }
+
+}

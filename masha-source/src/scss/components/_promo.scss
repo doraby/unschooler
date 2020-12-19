@@ -1,0 +1,105 @@
+.promo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.promo__content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-bottom: 70px;
+    padding-top: 40px;
+
+}
+
+.promo__text {
+    max-width: 57.6%;
+    margin: 0;
+    padding-top: 30px;
+    @include font (Anonymous-reg, 5.6rem, 1, 400);
+}
+
+.highlight {
+    @include font (Anonymous-bold, 5.6rem, 1, 600);
+
+    &_red:hover {
+        color: $color-element-red;
+        transition-duration: 0.3s;
+
+    }
+
+    &_blue:hover {
+        color: $color-element-blue;
+        transition-duration: 0.3s;
+
+    }
+
+    &_orange:hover {
+        color: $color-element-orange;
+        transition-duration: 0.3s;
+
+    }
+
+    &_yellow:hover {
+        color: $color-element-yellow;
+        transition-duration: 0.3s;
+
+    }
+}
+
+.promo__button::after {
+    content: url(../img/Line5.svg);
+    position: absolute;
+    bottom: -170px;
+    left: 48%;
+}
+
+@media (max-width: $tablet-width) {
+    .promo__content {
+        margin-bottom: 50px;
+    }
+
+    .promo__text {
+        padding-top: 50px;
+        @include font (Anonymous-reg, 3.8rem, 1, 400);
+
+    }
+
+    .highligt {
+        @include font (Anonymous-bold, 3.8rem, 1, 600);
+    }
+
+    .promo__button::after {
+        content: "";
+        background-image: url(../img/Line5.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: -145px;
+        left: 48%;
+        width: 45px;
+        height: 120px;
+
+    }
+}
+
+@media (max-width: $phone-width) {
+    .promo__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .promo__text {
+        max-width: 85%;
+        padding-top: 40px;
+        @include font (Anonymous-reg, 2.2em, 1, 400);
+
+    }
+
+    .highlight {
+        @include font (Anonymous-bold, 2.2rem, 1, 600);
+    }
+
+}
