@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 92%;
+    min-height: 80px;
+    padding-right: 1.7% ;
+}
+
+@media (max-width: $phone-width) {
+    .header {
+        width: 100%;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,167 @@
+.icon {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.icon_youtube {
+    width: 22px;
+    height: 30px;
+    background-image: url(../img/youtube.svg);
+    
+}
+
+.icon_twitter {
+    width: 22px;
+    height: 30px;
+    background-image: url(../img/twitter.svg);
+    
+}
+
+.icon_facebook {
+    width: 22px;
+    height: 30px;
+    background-image: url(../img/facebook.svg);
+    
+}
+
+.icon_profession {
+    width: 380px;
+    height: 430px;
+    background-image: url(../img/profession.svg);
+}
+
+.icon_course-and-books {
+    width: 457px;
+    height: 380px;
+    background-image: url(../img/course-and-books.svg);
+}
+
+.icon_project {
+    width: 405px;
+    height: 410px;
+    background-image: url(../img/project.svg);
+}
+
+.icon_work {
+    width: 420px;
+    height: 260px;
+    background-image: url(../img/work.svg);
+}
+
+.ico {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.ico_triangle {
+    background-image: url(../img/triangle.svg);
+    width: 40px;
+    height: 40px;
+
+}
+
+.ico_square-blue {
+    background-image: url(../img/square-blue.svg);
+    width: 65px;
+    height: 36px;
+}
+
+.ico_ellipse {
+    background-image: url(../img/ellipse.svg);
+    width: 40px;
+    height: 39px;
+}
+
+.ico_square-yellow {
+    background-image: url(../img/square-yellow.svg);
+    width: 84px;
+    height: 30px;
+}
+
+@media (max-width: $tablet-width) {
+    .icon_big-logo {
+        width: 201px;
+        height: auto;
+        background-image: url(../img/unscholoerIT.svg);
+    }
+
+    .icon_profession {
+        width: 275px;
+        height: 290px;
+    }
+    
+    .icon_course-and-books {
+        width: 305px;
+        height: 250px;
+    }
+    
+    .icon_project {
+        width: 255px;
+        height: 255px;
+    }
+    
+    .icon_work {
+        width: 285px;
+        height: 175px;
+    }
+
+    .ico_triangle {
+        width: 30px;
+        height: 30px;
+    
+    }
+    
+    .ico_square-blue {
+        width: 45px;
+        height: 26px;
+    }
+    
+    .ico_ellipse {
+        width: 27px;
+        height: 27px;
+    }
+    
+    .ico_square-yellow {
+        width: 58px;
+        height: 21px;
+    }
+
+}
+
+@media (max-width: $phone-width) {
+    .icon_big-logo {
+        width: 180px;
+        height: 140px;
+        background-size: contain;
+    }
+
+    .ico_triangle {
+        width: 13px;
+        height: 15px;
+    
+    }
+    
+    .ico_square-blue {
+        width: 25px;
+        height: 15px;
+    }
+    
+    .ico_ellipse {
+        width: 15px;
+        height: 15px;
+    }
+    
+    .ico_square-yellow {
+        width: 35px;
+        height: 12px;
+    }
+   
+    .icon_project {
+        width: 270px;
+        height: 270px;
+    }
+    
+}

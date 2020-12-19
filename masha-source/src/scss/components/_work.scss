@@ -1,0 +1,50 @@
+.work {
+    display: flex;
+    justify-content: center;
+    transform: translateY(-15%);
+}
+
+.work__content {
+    position: relative;
+
+}
+
+.work__subtitle {
+    top: 3%;
+    left: -7%;
+}
+
+.work__arrows {
+    position: absolute;
+    bottom: 0;
+    left: 80%;
+    width: 50px;
+    height: 140px;
+    background-image: url(../img/work-arrow.svg);
+    background-repeat: no-repeat;
+}
+
+@media (max-width: $tablet-width) {
+    .work {
+        transform: translateY(-25%);
+        padding-right: 10%;
+    }
+
+    .work__arrows {
+        bottom: 0;
+        left: 87%;
+        width: 50px;
+        height: 100px;
+        background-size: contain;
+    }
+}
+
+@media (max-width: $phone-width) {
+    .work {
+        padding: 0;
+        transform: translateY(0%);
+    }
+}
+
+
+

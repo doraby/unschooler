@@ -1,0 +1,59 @@
+.profession {
+    display: flex;
+    justify-content: center;
+}
+
+.profession__content {
+    position: relative;
+
+}
+
+.profession__subtitle {
+    top: 30%;
+    left: -5%;
+}
+
+.profession__arrows {
+    position: absolute;
+    top: 0%;
+    left: -92%;
+
+    width: 280%;
+    height: 140%;
+    background-image: url(../img/profession-arrows.svg);
+    background-repeat: no-repeat;
+}
+
+@media (max-width: $tablet-width) {
+    .profession__subtitle {
+        top: 33%;
+        left: -5%;
+    }
+
+    .profession__arrows {
+        top: 5%;
+        left: -83%;
+        width: 272%;
+        height: 133%;
+        background-size: contain;
+    }
+
+}
+
+@media (max-width: $phone-width) {
+    .profession__content {
+        margin-bottom: 60px;
+    }
+
+
+    .profession__arrows {
+        top: 55%;
+        left: 0%;
+    
+        width: 315px;
+        height: 225px;
+        background-image: url(../img/profession-arrows-mobile.svg);
+        background-repeat: no-repeat;
+    }
+
+}

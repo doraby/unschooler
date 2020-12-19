@@ -1,0 +1,29 @@
+.sidebar {
+    position: fixed;
+    top: 5.5%;
+    left: 0;
+    width: 5.5%;
+    height: 100% - 5.5%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    border-right: 3px solid $color-main-color-dark;
+}
+
+.social {
+    padding: 0;
+    list-style: none;
+}
+
+.social__button {
+    padding: 15px 0;
+}
+
+@media (max-width: $phone-width) {
+    .sidebar {
+        display: none;
+    }
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unschooler IT</title>
+    <link rel="stylesheet" href="src/scss/style.css">
+    
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <a href="">
+                <img class="logo__image" src="src/img/header-logo.svg" alt="логотип">
+            </a>
+        </div>
+        <div class="burger">
+            <div class="burger__menu"></div>
+            <div class="burger__menu"></div>
+        </div>
+
+        <nav class="nav-mobile">
+            <ul class="site-nav-mobile">
+                <li class="site-nav__item"><a class="site-nav__link" href="#">профессия</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="#">курсы</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="#">проекты</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="#">работа</a></li>
+            </ul>
+            <ul class="user-nav-mobile">
+                <li class="user-nav__item"><a class="user-nav__link" href="#">Войти</a></li>
+            </ul>
+            <ul class="social-mobile">
+                <li class="social__button"><a class="icon icon_youtube" href="#"><span
+                            class="visually-hidden">Youtube</span></a></li>
+                <li class="social__button"><a class="icon icon_twitter" href="#"><span
+                            class="visually-hidden">Twitter</span></a></li class="social__button">
+                <li class="social__button"><a class="icon icon_facebook" href="#"><span
+                            class="visually-hidden">Facebook</span></a></li>
+            </ul>
+            <button class="close-button"><span class="visually-hidden">Закрыть</span></button>
+        </nav>
+
+
+
+        <nav class="nav">
+            <ul class="site-nav">
+                <li class="site-nav__item"><a class="site-nav__link" href="#">профессия</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="#">курсы</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="#">проекты</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="#">работа</a></li>
+            </ul>
+            <ul class="user-nav">
+                <li class="user-nav__item"><a class="user-nav__link" href="#">Войти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="promo">
+            <div class="promo__content">
+                <h1><span class="visually-hidden">Бесплатные курсы</span>IT
+                    <span class="big-logo"></span></h1>
+                <p class="promo__text">Мы&nbsp;помогаем людям без подготовки <b class="highlight highlight_red"><span
+                            class="ico ico_triangle"></span>выбрать профессию в&nbsp;IT,</b><b
+                        class="highlight highlight_blue"><span class="ico ico_square-blue"></span>подобрать бесплатные
+                        курсы,</b> создать с&nbsp;помощью
+                    менторов <b class="highlight highlight_orange"><span class="ico ico_ellipse"></span>проекты для
+                        портфолио</b> и&nbsp;найти первую <b class="highlight highlight_yellow"><span
+                            class="ico ico_square-yellow"></span>работу</b>.</p>
+            </div>
+            <div class="promo__button">
+                <a class="button button_large">Начни с выбора профессии</a>
+            </div>
+        </section>
+
+        <div class="main-part">
+            <section class="profession">
+                <div class="profession__content">
+                    <h2><a class="icon icon_profession" href=""><span class="visually-hidden">Профессия</span></a>
+                    </h2>
+                    <p class="subtitle profession__subtitle">Пройди <b>курс профориентации</b> и&nbsp;выбери свою
+                        профессию</p>
+                    <span class="profession__arrows"></span>
+                    <p class="thought thought_1">Все сложно, ничего не понятно. Игре конец.</p>
+                    <p class="thought thought_2">Работа в&nbsp;прачечной. Пропусти ход.</p>
+                    <p class="thought thought_3">Кладбище незакрытых вкладок. Game over.</p>
+                    <p class="thought thought_4">Работа в&nbsp;Министерстве Культуры. Пропусти два хода.</p>
+                </div>
+            </section>
+
+            <section class="course-and-books">
+                <div class="course-and-books__content">
+                    <h2><a class="icon icon_course-and-books" href=""><span class="visually-hidden">Курсы и
+                                книги</span></a>
+                    </h2>
+                    <p class="subtitle course-and-books__subtitle">Пройди курсы и&nbsp;прочитай книги
+                        по&nbsp;направлению
+                        <b>самостоятельно</b></p>
+                    <span class="course-and-books__arrows"></span>
+                    <p class="thought thought_5">Ай, лень. Что&nbsp;там&nbsp;на&nbsp;Netfix?</p>
+                    <p class="thought thought_6">Своя компания. Здравствуй свобода, прощай 8-ми часовой рабочий день.
+                    </p>
+                </div>
+            </section>
+
+            <section class="project">
+                <div class="project__content">
+                    <h2><a class="icon icon_project" href=""><span class="visually-hidden">Проекты</span></a></h2>
+                    <p class="subtitle project__subtitle">Тренируйся <b>на&nbsp;проектах</b> и&nbsp;оттачивай знания
+                        <b>фидбеком менторов</b></p>
+                    <span class="project__arrows"></span>
+                    <p class="thought thought_7">Не для найма мама ягодку растила? Ты – фрилансер. <a
+                            class="project__link" href="">Тебе сюда</a>
+                    </p>
+                </div>
+            </section>
+
+            <section class="work">
+                <div class="work__content">
+                    <h2><a class="icon icon_work" href=""><span class="visually-hidden">Работа</span></a></h2>
+                    <p class="subtitle work__subtitle">Попади <b>на&nbsp;доску кандидатов</b> с&nbsp;портфолио проектов
+                    </p>
+                    <span class="work__arrows"></span>
+                </div>
+            </section>
+            <div class="main-part__button">
+                <a class="button button_large" href="">Ну давай!</a>
+            </div>
+            <div class="main-image">
+                <img src="src/img/main-image.svg" alt="new profession">
+            </div>
+        </div>
+
+
+        <section class="proposal">
+            <div class="proposal__content">
+                <div>
+                    <h3 class="proposal__title">Партнёрам</h3>
+                    <p class="proposal__text">У&nbsp;тебя есть идея проекта, но&nbsp;нет инвестиций. Опиши его подробно
+                        и&nbsp;стань партнером. Мы&nbsp;реализуем
+                        его вместе с&nbsp;тобой для тренировки.</p>
+                </div>
+                <div class="proposal__button">
+                    <a class="button button_medium" href="">Заявка партнёра</a>
+                </div>
+            </div>
+
+            <div class="proposal__content">
+                <div>
+                    <h3 class="proposal__title">Менторам</h3>
+                    <p class="proposal__text">Ты&nbsp;уже профи и&nbsp;время от&nbsp;времени подумываешь сделать свой
+                        стартап, собрать команду с&nbsp;нуля или найти помощника. Подай заявку
+                        на&nbsp;менторство и&nbsp;собирай свою команду.</p>
+                </div>
+                <div class="proposal__button">
+                    <a class="button button_medium" href="">Заявка ментора</a>
+                </div>
+            </div>
+
+            <div class="proposal__content">
+                <div>
+                    <h3 class="proposal__title">Рекрутёрам</h3>
+                    <p class="proposal__text">Ищешь специалиста в&nbsp;штат? <a class="proposal__link" href="">Наши
+                            ребята все с&nbsp;опытом
+                            и&nbsp;реальными проектами в&nbsp;портфолио.</a> Опиши специалиста
+                        и&nbsp;мы&nbsp;прокачаем его в&nbsp;необоходимых скиллах.</p>
+                </div>
+                <div class="proposal__button">
+                    <a class="button button_medium" href="">Заявка рекрутера</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="sidebar">
+            <a class="logo__text logo__text_transform">unschooler&nbsp;IT</a>
+            <ul class="social">
+                <li class="social__button"><a class="icon icon_youtube" href="#"><span
+                            class="visually-hidden">Youtube</span></a></li>
+                <li class="social__button"><a class="icon icon_twitter" href="#"><span
+                            class="visually-hidden">Twitter</span></a></li class="social__button">
+                <li class="social__button"><a class="icon icon_facebook" href="#"><span
+                            class="visually-hidden">Facebook</span></a></li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="contacts">
+            <div class="footer-logo">
+                <img class="logo__image" src="src/img/logo.svg" alt="логотип">
+                <p class="logo__text logo__text_light">Unschooler</p>
+            </div>
+            <a class="email" href="mailto:unschooler97@gmail.com">unschooler97@gmail.com</a>
+        </div>
+
+        <div class="footer-nav">
+            <ul class="nav-list">
+                <li><a class="nav-list__link" href="">Web-designer</a></li>
+                <li><a class="nav-list__link" href="">HTML&CSS Верстальщик</a></li>
+                <li><a class="nav-list__link" href="">Frontend Программист</a></li>
+                <li><a class="nav-list__link" href="">Backend Программист</a></li>
+                <li><a class="nav-list__link" href="">Тестировщик</a></li>
+                <li><a class="nav-list__link" href="">Менеджер проектов</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- <script src="bundle.js"></script> -->
+
+
+    <script>
+        var menu = document.querySelector(".nav-mobile");
+        var burger = document.querySelector(".burger");
+        var close = document.querySelector(".close-button");
+
+        burger.addEventListener("click", function (evt) {
+            menu.classList.add("show");
+        });
+
+        close.addEventListener("click", function(evt) {
+            menu.classList.remove("show");
+        });
+    </script> 
+
+</body>
+
+</html>

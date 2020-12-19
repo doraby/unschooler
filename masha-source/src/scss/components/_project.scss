@@ -1,0 +1,82 @@
+.project {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 8%;
+    transform: translateY(-15%);
+}
+
+.project__content {
+    position: relative;
+
+}
+
+.project__subtitle {
+    top: 37.5%;
+    right: -20%;
+}
+
+.project__arrows {
+    position: absolute;
+    bottom: -15%;
+    left: -44%;
+    width: 348px;
+    height: 228px;
+    background-image: url(../img/Group331.svg);
+    background-repeat: no-repeat;
+
+}
+
+.project__link {
+    color: $color-main-color-dark;
+    text-decoration: underline;
+}
+
+@media (max-width: $tablet-width) {
+    .project {
+        padding-right: 25%;
+        transform: translateY(-45%);
+    }
+
+    .project__subtitle {
+        top: 35.5%;
+        right: -35%;
+    }
+
+    .project__arrows {
+        bottom: -25%;
+        left: -50%;
+        width: 240px;
+        height: 155px;
+        background-size: contain;
+
+    }
+
+}
+
+@media (max-width: $phone-width) {
+    .project {
+        justify-content: center;
+        padding: 0;
+        transform: translateY(0%);
+    }
+
+    .project__content {
+        margin-bottom: 180px;
+    }
+
+    .project__subtitle {
+        top: 38.5%;
+        right: -25%;
+    }
+
+    .project__arrows {
+        width: 270px;
+        height: 315px;
+
+        bottom: -68%;
+        left: 3%;
+        background-image: url(../img/project-arrows-mobile.svg);
+        background-repeat: no-repeat;
+
+    }
+}
