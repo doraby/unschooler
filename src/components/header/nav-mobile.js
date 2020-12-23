@@ -1,7 +1,7 @@
 function NavMobile() {
   return (
     <nav className="nav-mobile">
-      <ul class="site-nav-mobile">
+      <ul className="site-nav-mobile">
         <li className="site-nav__item"><a className="site-nav__link" href="/">профессия</a></li>
         <li className="site-nav__item"><a className="site-nav__link" href="/">курсы</a></li>
         <li className="site-nav__item"><a className="site-nav__link" href="/">проекты</a></li>
@@ -27,7 +27,7 @@ function NavMobile() {
           </a>
         </li>
       </ul>
-      <button className="close-button"><span class="visually-hidden">Закрыть</span></button>
+      <button className="close-button"><span className="visually-hidden">Закрыть</span></button>
     </nav>
   );
 }
