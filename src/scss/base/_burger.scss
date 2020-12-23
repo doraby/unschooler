@@ -1,0 +1,13 @@
+@media (max-width: $phone-width) {
+    .burger {
+        cursor: pointer;
+
+    }
+
+    .burger__menu {
+        width: 30px;
+        height: 3px;
+        margin: 10px 0;
+        background-color: $color-main-color-dark;
+    }
+}

@@ -1,0 +1,85 @@
+.button {
+    display: block;
+    cursor: pointer;
+    transition: 1s;
+    
+    color: $color-main-color-dark;
+    border-color: $color-main-color-dark;
+}
+
+.button_large {
+    padding: 31px 70px;
+    border: 4px solid $color-main-color-dark;
+    border-radius: 60px;
+
+    @include font (Anonymous-bold, 3.2rem, 1, 700);
+}
+
+.button_medium {
+    padding: 23px 40px;
+    border: 4px solid;
+    border-radius: 60px;
+
+    @include font (Anonymous-bold, 2.4rem, 1, 700);
+}
+
+.button_large:hover,
+.button_medium:hover,
+.button_small:hover {
+    background-color: $color-element-red;
+    border-color: inherit;
+    box-shadow: 0 15px 0 -4px $color-main-color-light, 0 15px $color-main-color-dark;
+    transform: translateY(-15px);
+    transition-duration: 1s;
+}
+
+.button_large:active,
+.button_medium:active,
+.button_small:active {
+    border-color: $color-element-red;
+}
+
+.close-button {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/close.svg);
+    background-color: transparent;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: $tablet-width) {
+
+    .button_large {
+        padding: 23px 40px;
+        border: 4px solid;
+        border-radius: 60px;
+    
+        @include font (Anonymous-bold, 2.4rem, 1, 700);
+    }
+
+    .button_medium {
+        padding: 12px 24px;
+        border: 2px solid $color-main-color-dark;
+        border-radius: 33px;
+    
+        @include font (Graphik-semibold, 1.8rem, 1, 600);
+    
+    }
+
+}
+
+@media (max-width: $phone-width) {
+    .button_large {
+        padding: 23px 40px;
+        border: 4px solid;
+        border-radius: 60px;
+    
+        @include font (Anonymous-bold, 2rem, 1, 700);
+    }
+
+}

@@ -1,0 +1,64 @@
+.header-logo {
+    display: none;
+}
+
+.footer-logo {
+    display: flex;
+}
+
+.logo__image {
+    width: 44px;
+    height: 40px;
+    padding-right: 15px;
+
+}
+
+.big-logo {
+    position: absolute;
+    top: -35px;
+    left: -35px;
+    width: 175px;
+    height: 175px;
+    background-image: url(../img/Group.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 3s;
+
+    &:hover {
+        transform: rotate(360deg);
+        transition: transform 10s linear;
+    }
+
+}
+
+.logo__text {
+    align-self: center;
+    margin: 0;
+    @include font(Graphik-semibold, 3rem, 1, 600);
+    color: $color-main-color-dark;
+
+}
+
+.logo__text_transform {
+    transform-origin: center;
+    transform: rotate(-90deg);
+    margin-top: 65px;
+}
+
+.logo__text_light {
+    font-size: 2.3rem;
+    color: $color-main-color-light;
+}
+
+@media (max-width: $tablet-width) {
+    .logo__text_transform {
+        @include font(Graphik-semibold, 2.2rem, 1, 600);
+    }
+}
+
+@media (max-width: $phone-width) {
+    .header-logo {
+        display: initial;
+    }
+
+}
