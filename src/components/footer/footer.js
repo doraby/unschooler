@@ -1,9 +1,12 @@
+import React from 'react';
+import logo from './../../img/logo.svg';
+
 function Footer() {
   return (
     <footer className="footer">
       <div className="contacts">
         <div className="footer-logo">
-          <img className="logo__image" src="src/img/logo.svg" alt="логотип"/>
+          <img className="logo__image" src={logo} alt="логотип"/>
           <p className="logo__text logo__text_light">Unschooler</p>
         </div>
         <a className="email" href="mailto:unschooler97@gmail.com">unschooler97@gmail.com</a>

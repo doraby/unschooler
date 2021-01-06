@@ -1,16 +1,17 @@
+import React from 'react';
 import './scss/style.css';
 import Footer from './components/footer/footer';
 import Header from './components/header/header';
 import Main from './components/main/main';
 
 
-function App() {
+const App = () => {
   return (
-  <div>
+    <React.Fragment>
     <Header />
     <Main />
     <Footer />
-  </div>
+    </React.Fragment>
   );
 }
 

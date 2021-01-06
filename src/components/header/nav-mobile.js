@@ -1,6 +1,12 @@
-function NavMobile() {
+import React from 'react';
+
+const NavMobile = (props) => {
+  let navMobileClass = 'nav-mobile'
+  if (props.Show) {
+    navMobileClass = 'nav-mobile show'
+  }
   return (
-    <nav className="nav-mobile">
+    <nav className={navMobileClass}>
       <ul className="site-nav-mobile">
         <li className="site-nav__item"><a className="site-nav__link" href="/">профессия</a></li>
         <li className="site-nav__item"><a className="site-nav__link" href="/">курсы</a></li>
@@ -27,7 +33,7 @@ function NavMobile() {
           </a>
         </li>
       </ul>
-      <button className="close-button"><span className="visually-hidden">Закрыть</span></button>
+      <button className="close-button" onClick={props.Click}><span className="visually-hidden">Закрыть</span></button>
     </nav>
   );
 }
