@@ -66,16 +66,19 @@
 }
 
 .nav-mobile {
-    display: none;
+    display: block;
     position: absolute;
     top: 0;
     right: 0;
     z-index: 98;
-    width: 350px;
-    min-height: 450px;
+    width: 100vw;
+    min-height: 100vh;
     padding: 30px 40px;
 
     background-color: $color-main-color-light;
+
+    transform: translateX(100%);
+    transition: transform 1s;
 
     & .site-nav__item::after {
         display: none;
@@ -84,7 +87,7 @@
 }
 
 .show {
-    display: initial;
+    transform: translateX(0)
 }
 
 
