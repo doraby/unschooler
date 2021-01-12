@@ -2,7 +2,7 @@ import React from 'react';
 import MainPart from "./main-part";
 import MainProposal from "./main-proposal";
 import Promo from "./promo";
-import Sidebar from "./sidebar";
+
 
 function Main() {
   return (
@@ -10,7 +10,6 @@ function Main() {
       <Promo />
       <MainPart />
       <MainProposal />
-      <Sidebar />
     </main>
   );
 }

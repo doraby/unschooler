@@ -2,6 +2,7 @@ import MainCourse from "./main-course-and-books";
 import MainProfession from "./main-profession";
 import MainProject from "./main-project";
 import MainWork from "./main-work";
+import mainImage from '../../img/main-image.svg';
 
 function MainPart() {
   return (
@@ -14,7 +15,7 @@ function MainPart() {
         <a className="button button_large" href="/">Ну давай!</a>
       </div>
       <div className="main-image">
-        <img src="src/img/main-image.svg" alt="new profession"/>
+        <img src={mainImage} alt="new profession"/>
       </div>
     </div>
   );

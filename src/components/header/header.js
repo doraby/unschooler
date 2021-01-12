@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import Burger from "./burger";
 import HeaderLogo from "./headerLogo";
 import Nav from "./nav";
@@ -23,7 +23,7 @@ class Header extends Component {
   };
   
   render () {
-    
+    //const [isActiveMenu, setIsActiveMenu] = useState(false);
     return (
       <header className="header">
         <HeaderLogo />

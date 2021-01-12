@@ -16,23 +16,23 @@
     background-size: 70% 98%;
 
     &:first-child {
-    background-image: url(../img/triangle.svg);
+    background-image: url(../../img/triangle.svg);
 
     }
 
     &:nth-child(2) {
-        background-image: url(../img/square-blue.svg);
+        background-image: url(../../img/square-blue.svg);
         background-size: 90% 100%;
         background-position-x: 1000%;
 
     }
 
     &:nth-child(3) {
-        background-image: url(../img/ellipse.svg);
+        background-image: url(../../img/ellipse.svg);
     }
 
     &:nth-child(4) {
-        background-image: url(../img/square-yellow.svg);
+        background-image: url(../../img/square-yellow.svg);
     }
 
 

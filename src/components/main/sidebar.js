@@ -1,7 +1,9 @@
+import { NavLink } from "react-router-dom";
+
 function Sidebar() {
   return (
     <section className="sidebar">
-      <a className="logo__text logo__text_transform" href="/">unschooler&nbsp;IT</a>
+      <NavLink className="logo__text logo__text_transform" to="/">unschooler&nbsp;IT</NavLink>
       <ul className="social">
         <li className="social__button">
           <a className="icon icon_youtube" href="/">
