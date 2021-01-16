@@ -1,12 +1,13 @@
 import React from 'react';
+import { NavLink } from "react-router-dom";
 import logo from '../../img/header-logo.svg';
 
 function HeaderLogo() {
   return (
     <div className="header-logo">
-      <a href="/">
+      <NavLink to="/">
         <img className="logo__image" src={logo} alt="логотип"/>
-      </a>
+      </NavLink>
     </div>
   );
 }

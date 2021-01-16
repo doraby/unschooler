@@ -1,3 +1,6 @@
+import React from 'react';
+import { NavLink } from "react-router-dom";
+
 function Promo() {
   return (
     <section className="promo">
@@ -22,7 +25,7 @@ function Promo() {
         </p>
       </div>
       <div className="promo__button">
-        <a className="button button_large" href="/">Начни с выбора профессии</a>
+        <NavLink className="button button_large" to="/">Начни с выбора профессии</NavLink>
       </div>
     </section>
   );

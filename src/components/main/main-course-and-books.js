@@ -1,11 +1,14 @@
+import React from 'react';
+import { NavLink } from "react-router-dom";
+
 function MainCourse() {
   return (
     <section className="course-and-books">
       <div className="course-and-books__content">
         <h2>
-          <a className="icon icon_course-and-books" href="/">
+          <NavLink className="icon icon_course-and-books" to="/courses">
             <span className="visually-hidden">Курсы и книги</span>
-          </a>
+          </NavLink>
         </h2>
         <p className="subtitle course-and-books__subtitle">Пройди курсы и&nbsp;прочитай книги по&nbsp;направлению
           <b>самостоятельно</b>

@@ -8,16 +8,16 @@ const Header = () => {
 
   const [active, setActive] = useState(false);
 
-  const chengeActive = () => {
-    setActive(!active);
+  const handleChangeActive = () => {
+    setActive((current) => !current);
   }
 
   return (
     <header className="header">
       <HeaderLogo />
-      <Burger Click={chengeActive} />
+      <Burger onShowNav={handleChangeActive} />
       <Nav />
-      <NavMobile Show={active} Click={chengeActive} />
+      <NavMobile Show={active} onShowNav={handleChangeActive} />
     </header>
   )
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink, Link } from "react-router-dom";
 import logo from '../../img/logo.svg';
 
 function Footer() {
@@ -9,17 +10,17 @@ function Footer() {
           <img className="logo__image" src={logo} alt="логотип"/>
           <p className="logo__text logo__text_light">Unschooler</p>
         </div>
-        <a className="email" href="mailto:unschooler97@gmail.com">unschooler97@gmail.com</a>
+        <Link className="email" to="mailto:unschooler97@gmail.com">unschooler97@gmail.com</Link>
       </div>
 
       <div className="footer-nav">
         <ul className="nav-list">
-          <li><a className="nav-list__link" href="/">Web-designer</a></li>
-          <li><a className="nav-list__link" href="/">HTML&CSS Верстальщик</a></li>
-          <li><a className="nav-list__link" href="/">Frontend Программист</a></li>
-          <li><a className="nav-list__link" href="/">Backend Программист</a></li>
-          <li><a className="nav-list__link" href="/">Тестировщик</a></li>
-          <li><a className="nav-list__link" href="/">Менеджер проектов</a></li>
+          <li><NavLink className="nav-list__link" to="/">Web-designer</NavLink></li>
+          <li><NavLink className="nav-list__link" to="/">HTML&CSS Верстальщик</NavLink></li>
+          <li><NavLink className="nav-list__link" to="/">Frontend Программист</NavLink></li>
+          <li><NavLink className="nav-list__link" to="/">Backend Программист</NavLink></li>
+          <li><NavLink className="nav-list__link" to="/">Тестировщик</NavLink></li>
+          <li><NavLink className="nav-list__link" to="/">Менеджер проектов</NavLink></li>
         </ul>
       </div>
     </footer>

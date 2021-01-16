@@ -1,4 +1,5 @@
-import { NavLink } from "react-router-dom";
+import React from 'react';
+import { NavLink, Link } from "react-router-dom";
 
 function Sidebar() {
   return (
@@ -6,19 +7,19 @@ function Sidebar() {
       <NavLink className="logo__text logo__text_transform" to="/">unschooler&nbsp;IT</NavLink>
       <ul className="social">
         <li className="social__button">
-          <a className="icon icon_youtube" href="/">
+          <Link className="icon icon_youtube" to="/">
             <span className="visually-hidden">Youtube</span>
-          </a>
+          </Link>
         </li>
         <li className="social__button">
-          <a className="icon icon_twitter" href="/">
+          <Link className="icon icon_twitter" to="/">
             <span className="visually-hidden">Twitter</span>
-          </a>
+          </Link>
         </li>
         <li className="social__button">
-          <a className="icon icon_facebook" href="/">
+          <Link className="icon icon_facebook" to="/">
             <span className="visually-hidden">Facebook</span>
-          </a>
+          </Link>
         </li>
       </ul>
     </section>

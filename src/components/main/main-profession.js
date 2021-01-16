@@ -1,11 +1,14 @@
+import React from 'react';
+import { NavLink } from "react-router-dom";
+
 function MainProfession() {
   return (
     <section className="profession">
       <div className="profession__content">
         <h2>
-          <a className="icon icon_profession" href="/">
+          <NavLink className="icon icon_profession" to="/profession">
             <span className="visually-hidden">Профессия</span>
-          </a>
+          </NavLink>
         </h2>
         <p className="subtitle profession__subtitle">Пройди <b>курс профориентации</b> и&nbsp;выбери свою профессию</p>
         <span className="profession__arrows"></span>

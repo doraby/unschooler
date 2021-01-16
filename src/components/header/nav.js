@@ -11,7 +11,7 @@ function Nav() {
         <li className="site-nav__item"><NavLink className="site-nav__link" to="/test">работа</NavLink></li>
       </ul>
       <ul className="user-nav">
-        <li className="user-nav__item"><a className="user-nav__link" href="/">Войти</a></li>
+        <li className="user-nav__item"><NavLink className="user-nav__link" to="/">Войти</NavLink></li>
         </ul>
       </nav>
   );

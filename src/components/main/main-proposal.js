@@ -1,3 +1,6 @@
+import React from 'react';
+import { NavLink } from "react-router-dom";
+
 function MainProposal() {
   return (
     <section className="proposal">
@@ -8,7 +11,7 @@ function MainProposal() {
             его вместе с&nbsp;тобой для тренировки.</p>
         </div>
         <div className="proposal__button">
-          <a className="button button_medium" href="/">Заявка партнёра</a>
+          <NavLink className="button button_medium" to="/">Заявка партнёра</NavLink>
         </div>
       </div>
 
@@ -20,7 +23,7 @@ function MainProposal() {
                         на&nbsp;менторство и&nbsp;собирай свою команду.</p>
         </div>
         <div className="proposal__button">
-          <a className="button button_medium" href="/">Заявка ментора</a>
+          <NavLink className="button button_medium" to="/">Заявка ментора</NavLink>
         </div>
       </div>
 
@@ -28,12 +31,12 @@ function MainProposal() {
         <div>
           <h3 className="proposal__title">Рекрутёрам</h3>
           <p className="proposal__text">Ищешь специалиста в&nbsp;штат? 
-            <a className="proposal__link" href="/">Наши ребята все с&nbsp;опытом и&nbsp;реальными проектами в&nbsp;портфолио.</a>
+            <NavLink className="proposal__link" to="/">Наши ребята все с&nbsp;опытом и&nbsp;реальными проектами в&nbsp;портфолио.</NavLink>
              Опиши специалиста и&nbsp;мы&nbsp;прокачаем его в&nbsp;необоходимых скиллах.
           </p>
         </div>
         <div className="proposal__button">
-          <a className="button button_medium" href="/">Заявка рекрутера</a>
+          <NavLink className="button button_medium" to="/">Заявка рекрутера</NavLink>
         </div>
       </div>
     </section>

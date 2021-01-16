@@ -1,3 +1,5 @@
+import React from 'react';
+import { NavLink } from "react-router-dom";
 import MainCourse from "./main-course-and-books";
 import MainProfession from "./main-profession";
 import MainProject from "./main-project";
@@ -12,7 +14,7 @@ function MainPart() {
       <MainProject />
       <MainWork />
       <div className="main-part__button">
-        <a className="button button_large" href="/">Ну давай!</a>
+        <NavLink className="button button_large" to="/">Ну давай!</NavLink>
       </div>
       <div className="main-image">
         <img src={mainImage} alt="new profession"/>

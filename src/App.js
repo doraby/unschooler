@@ -14,7 +14,7 @@ import Test from './components/test/test';
 const App = () => {
   return (
     <BrowserRouter>
-    <React.Fragment>
+    <>
       <Header />
       <Sidebar />
       <Route exact path="/" component={Main}/>
@@ -23,7 +23,7 @@ const App = () => {
       <Route path="/projects" component={Projects}/>
       <Route path="/test" component={Test}/>
       <Footer />
-    </React.Fragment>
+    </>
     </BrowserRouter>
   );
 }
