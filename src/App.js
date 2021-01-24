@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './scss/style.scss';
 import Footer from './components/footer/footer';
 import Header from './components/header/header';
@@ -12,13 +12,23 @@ import Test from './components/test/test';
 
 
 const App = () => {
+
+  const [professionSelected, setProfessionSelected] = useState();
+  const handleProfessionSelected = (a) => {
+    console.log(a)
+    setProfessionSelected(a);
+  }
+
   return (
     <BrowserRouter>
     <>
-      <Header />
+      <Header professionSelected={professionSelected}/>
       <Sidebar />
       <Route exact path="/" component={Main}/>
-      <Route path="/profession" component={Profession}/>
+      <Route 
+        path="/profession"
+        render={(props) => <Profession professionSelected={professionSelected} handleProfessionSelected={handleProfessionSelected}  />}
+      />
       <Route path="/courses" component={Courses}/>
       <Route path="/projects" component={Projects}/>
       <Route path="/test" component={Test}/>

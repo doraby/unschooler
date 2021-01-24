@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
+import ProfessionSelect from '../profession/professionSelect';
 import Burger from "./burger";
 import HeaderLogo from "./headerLogo";
 import Nav from "./nav";
 import NavMobile from "./nav-mobile";
+//import {setProfessionSelect} from './../../scripts/scripts';
 
-const Header = () => {
+const Header = (props) => {
 
+  const {...other} = props;
   const [active, setActive] = useState(false);
 
   const handleChangeActive = () => {
@@ -13,12 +16,15 @@ const Header = () => {
   }
 
   return (
+    <>
     <header className="header">
       <HeaderLogo />
       <Burger onShowNav={handleChangeActive} />
       <Nav />
       <NavMobile Show={active} onShowNav={handleChangeActive} />
     </header>
+    <ProfessionSelect {...other}/>
+    </>
   )
 }
 

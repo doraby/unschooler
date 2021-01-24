@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 const NavMobile = ({Show, onShowNav}) => {
     return (
-    <nav className={classNames('nav-mobile', {show: Show})}>
+    <nav className={classNames('nav-mobile', {'show': Show})}>
       <ul className="site-nav-mobile">
         <li className="site-nav__item"><NavLink className="site-nav__link" to="/profession">профессия</NavLink></li>
         <li className="site-nav__item"><NavLink className="site-nav__link" to="/courses">курсы</NavLink></li>

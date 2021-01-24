@@ -1,12 +1,12 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 import MainCourse from "./main-course-and-books";
-import MainProfession from "./main-profession";
+import MainProfession from "./profession/main-profession";
 import MainProject from "./main-project";
 import MainWork from "./main-work";
 import mainImage from '../../img/main-image.svg';
 
-function MainPart() {
+const MainPart = () => {
   return (
     <div className="main-part">
       <MainProfession />

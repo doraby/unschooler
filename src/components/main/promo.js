@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 
-function Promo() {
+const Promo = () => {
   return (
     <section className="promo">
       <div className="promo__content">

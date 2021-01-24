@@ -4,7 +4,7 @@ import MainProposal from "./main-proposal";
 import Promo from "./promo";
 
 
-function Main() {
+const Main = () => {
   return (
     <main>
       <Promo />
