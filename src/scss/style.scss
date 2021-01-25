@@ -1,0 +1,26 @@
+//abstracts
+@import "abstracts/constants";
+@import "abstracts/mixins";
+
+//base
+@import "base/fonts";
+@import "base/base";
+@import "base/buttons";
+@import "base/icons";
+@import "base/logo";
+@import "base/burger";
+
+//components
+@import "components/navigation";
+@import "components/sidebar";
+@import "components/promo";
+@import "components/main-parts";
+@import "components/profession";
+@import "components/course-and-books";
+@import "components/project";
+@import "components/work";
+@import "components/proposal";
+
+//layout
+@import "layout/header";
+@import "layout/footer";

@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.scss';
+import React, { useState } from 'react';
+import './scss/style.scss';
+import Footer from './components/footer/footer';
+import Header from './components/header/header';
+import Main from './components/main/main';
+import Sidebar from './components/main/sidebar';
+import Profession from './components/profession/profession';
+import { BrowserRouter, Route } from 'react-router-dom';
+import Courses from './components/courses/courses';
+import Projects from './components/projects/projects';
+import Test from './components/test/test';
 
-function App() {
+
+const App = () => {
+
+  const [professionSelected, setProfessionSelected] = useState();
+  const handleProfessionSelected = (a) => {
+    console.log(a)
+    setProfessionSelected(a);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    <>
+      <Header professionSelected={professionSelected}/>
+      <Sidebar />
+      <Route exact path="/" component={Main}/>
+      <Route 
+        path="/profession"
+        render={(props) => <Profession professionSelected={professionSelected} handleProfessionSelected={handleProfessionSelected}  />}
+      />
+      <Route path="/courses" component={Courses}/>
+      <Route path="/projects" component={Projects}/>
+      <Route path="/test" component={Test}/>
+      <Footer />
+    </>
+    </BrowserRouter>
   );
 }
 

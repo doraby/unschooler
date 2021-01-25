@@ -1,0 +1,163 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.site-nav,
+.user-nav {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+
+.site-nav__item,
+.user-nav__item {
+    display: flex;
+    align-items: center;
+    padding: 0 3.5%;
+    margin: 20px;
+
+}
+
+.site-nav__item:not(:last-child)::after {
+    content: url(../../img/arrow.svg);
+    display: inline-flex;
+    width: 50px;
+    justify-content: flex-end;
+
+}
+
+.site-nav__link,
+.user-nav__link {
+    color: $color-main-color-dark;
+    @include font (Graphik-reg, 2rem, 1.6, 400);
+
+}
+
+.site-nav__item {
+    background-repeat: no-repeat;
+
+    &:first-child:hover {
+        background-image: url(../../img/triangle.svg);
+        background-position: left center;
+
+    }
+
+    &:nth-child(2):hover {
+        background-image: url(../../img/square-blue.svg);
+        background-position: left center;
+
+    }
+
+    &:nth-child(3):hover {
+        background-image: url(../../img/ellipse.svg);
+        background-position: left center;
+
+    }
+
+    &:nth-child(4):hover {
+        background-image: url(../../img/square-yellow.svg);
+        background-position: left center;
+
+    }
+}
+
+.nav-mobile {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 98;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 30px 40px;
+
+    background-color: $color-main-color-light;
+
+    transform: translateX(100%);
+    transition: transform 1s;
+
+    & .site-nav__item::after {
+        display: none;
+    }
+
+}
+
+.show {
+    transform: translateX(0)
+}
+
+
+
+.site-nav-mobile {
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 200px;
+
+    .site-nav__item {
+        padding: 10px 20px;
+        margin-bottom: 20px;
+
+        background-repeat: no-repeat;
+
+        &:first-child {
+            background-image: url(../../img/triangle.svg);
+            background-position: left center;
+
+        }
+
+        &:nth-child(2) {
+            background-image: url(../../img/square-blue.svg);
+            background-position: left center;
+
+        }
+
+        &:nth-child(3) {
+            background-image: url(../../img/ellipse.svg);
+            background-position: left center;
+
+        }
+
+        &:nth-child(4) {
+            background-image: url(../../img/square-yellow.svg);
+            background-position: left center;
+
+        }
+    }
+}
+
+.user-nav-mobile {
+    padding: 0;
+    margin-bottom: 20px;
+
+
+    .user-nav__item {
+        padding: 0;
+    }
+}
+
+.social-mobile {
+    display: flex;
+    list-style: none;
+    padding: 0;
+
+    .social__button {
+        padding-right: 20px;
+    }
+}
+
+
+
+
+@media (max-width: $phone-width) {
+    .nav {
+        display: none;
+    }
+
+    
+
+}

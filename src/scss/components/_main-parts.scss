@@ -1,0 +1,192 @@
+.main-part {
+    display: flex;
+    flex-direction: column;
+    padding: 160px 0 0;
+}
+
+.subtitle {
+    position: absolute;
+    width: 350px;
+
+    @include font (Anonymous-reg, 3.2rem, 1, 400);
+
+    & b {
+        @include font (Anonymous-bold, 3.2rem, 1, 700);
+
+    }
+}
+
+.main-part__button {
+    align-self: center;
+    margin-bottom: 40px;
+}
+
+.main-image {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.thought {
+    position: absolute;
+
+    @include font (Graphik-reg, 2.4rem, 1.37, 400);
+    color: $color-text;
+}
+
+.thought_1 {
+    width: 226px;
+    top: 8%;
+    left: -90%;
+    transform: translateX(-20%);
+}
+
+.thought_2 {
+    width: 170px;
+    top: 3%;
+    right: -93%;
+}
+
+.thought_3 {
+    width: 245px;
+    bottom: 7%;
+    right: -68%;
+}
+
+.thought_4 {
+    width: 225px;
+    bottom: -70%;
+    right: -102%;
+}
+
+.thought_5 {
+    width: 210px;
+    bottom: -50%;
+    right: -11%
+}
+
+.thought_6 {
+    width: 260px;
+    bottom: -70%;
+    right: 53%;
+}
+
+.thought_7 {
+    width: 222px;
+    bottom: -51%;
+    right: 3%;
+}
+
+@media (max-width: $tablet-width) {
+    .subtitle {
+        width: 255px;
+        @include font (Anonymous-reg, 2.3rem, 1, 400);
+
+        & b {
+            @include font (Anonymous-bold, 2.3rem, 1, 700);
+        }
+    }
+
+    .thought {
+        @include font (Graphik-reg, 1.6rem, 1.37, 400);
+    }
+
+    .thought_1 {
+        width: 150px;
+        top: 14%;
+        left: -82%;
+    }
+
+    .thought_2 {
+        width: 170px;
+        top: 13%;
+        right: -104%;
+    }
+
+    .thought_3 {
+        width: 162px;
+        bottom: 5%;
+        right: -60%;
+    }
+
+    .thought_4 {
+        width: 155px;
+        bottom: -51%;
+        right: -122%;
+    }
+
+    .thought_5 {
+        width: 140px;
+        bottom: -31%;
+        right: 5%;
+    }
+
+    .thought_6 {
+        width: 150px;
+        bottom: -55%;
+        right: 57%;
+    }
+
+    .thought_7 {
+        width: 222px;
+        bottom: -40%;
+        right: -35%;
+    }
+
+}
+
+@media (max-width: $phone-width) {
+    .main-part {
+        align-content: center;
+        padding: 160px 0 0;
+    }
+
+    .subtitle {
+        position: absolute;
+        width: 240px;
+
+        @include font (Anonymous-reg, 2rem, 1, 400);
+
+        & b {
+            @include font (Anonymous-bold, 2rem, 1, 700);
+        }
+    }
+
+    .thought_1 {
+        width: 150px;
+        top: 96%;
+        left: 0%;
+    }
+
+    .thought_2 {
+        display: none;
+    }
+
+    .thought_3 {
+        width: 162px;
+        bottom: -20%;
+        right: -15%;
+    }
+
+    .thought_4 {
+        display: none;
+    }
+
+    .thought_5 {
+        width: 140px;
+        bottom: -49%;
+        right: 0%;
+    }
+
+    .thought_6 {
+        width: 150px;
+        bottom: -56%;
+        right: 54%;
+    }
+
+    .thought_7 {
+        width: 148px;
+        bottom: -53%;
+        right: 48%;
+    }
+
+}

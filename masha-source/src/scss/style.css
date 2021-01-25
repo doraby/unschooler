@@ -1,24 +1,24 @@
 @font-face {
   font-family: "Anonymous-reg";
-  src: url("../fonts/Anonymous/AnonymousPro-Regular.ttf") format("truetype");
+  src: url("../../fonts/Anonymous/AnonymousPro-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Anonymous-bold";
-  src: url("../fonts/Anonymous/Anonymous-Pro-Bold.ttf") format("truetype");
+  src: url("../../fonts/Anonymous/Anonymous-Pro-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Graphik-reg";
-  src: url("../fonts/Graphik/Graphik-Regular-Desktop.otf");
+  src: url("../../fonts/Graphik/Graphik-Regular-Desktop.otf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Graphik-semibold";
-  src: url("../fonts/Graphik/Graphik-Semibold-Desktop.otf");
+  src: url("../../fonts/Graphik/Graphik-Semibold-Desktop.otf");
   font-weight: 600;
   font-style: normal;
 }
@@ -133,7 +133,7 @@ h1 {
   right: 40px;
   width: 25px;
   height: 25px;
-  background-image: url(../img/close.svg);
+  background-image: url(../../img/close.svg);
   background-color: initial;
   background-size: contain;
   border: none;
@@ -181,43 +181,43 @@ h1 {
 .icon_youtube {
   width: 22px;
   height: 30px;
-  background-image: url(../img/youtube.svg);
+  background-image: url(../../img/youtube.svg);
 }
 
 .icon_twitter {
   width: 22px;
   height: 30px;
-  background-image: url(../img/twitter.svg);
+  background-image: url(../../img/twitter.svg);
 }
 
 .icon_facebook {
   width: 22px;
   height: 30px;
-  background-image: url(../img/facebook.svg);
+  background-image: url(../../img/facebook.svg);
 }
 
 .icon_profession {
   width: 380px;
   height: 430px;
-  background-image: url(../img/profession.svg);
+  background-image: url(../../img/profession.svg);
 }
 
 .icon_course-and-books {
   width: 457px;
   height: 380px;
-  background-image: url(../img/course-and-books.svg);
+  background-image: url(../../img/course-and-books.svg);
 }
 
 .icon_project {
   width: 405px;
   height: 410px;
-  background-image: url(../img/project.svg);
+  background-image: url(../../img/project.svg);
 }
 
 .icon_work {
   width: 420px;
   height: 260px;
-  background-image: url(../img/work.svg);
+  background-image: url(../../img/work.svg);
 }
 
 .ico {
@@ -227,25 +227,25 @@ h1 {
 }
 
 .ico_triangle {
-  background-image: url(../img/triangle.svg);
+  background-image: url(../../img/triangle.svg);
   width: 40px;
   height: 40px;
 }
 
 .ico_square-blue {
-  background-image: url(../img/square-blue.svg);
+  background-image: url(../../img/square-blue.svg);
   width: 65px;
   height: 36px;
 }
 
 .ico_ellipse {
-  background-image: url(../img/ellipse.svg);
+  background-image: url(../../img/ellipse.svg);
   width: 40px;
   height: 39px;
 }
 
 .ico_square-yellow {
-  background-image: url(../img/square-yellow.svg);
+  background-image: url(../../img/square-yellow.svg);
   width: 84px;
   height: 30px;
 }
@@ -254,7 +254,7 @@ h1 {
   .icon_big-logo {
     width: 201px;
     height: auto;
-    background-image: url(../img/unscholoerIT.svg);
+    background-image: url(../../img/unscholoerIT.svg);
   }
 
   .icon_profession {
@@ -349,7 +349,7 @@ h1 {
   left: -35px;
   width: 175px;
   height: 175px;
-  background-image: url(../img/Group.svg);
+  background-image: url(../../img/Group.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -426,7 +426,7 @@ h1 {
 }
 
 .site-nav__item:not(:last-child)::after {
-  content: url(../img/arrow.svg);
+  content: url(../../img/arrow.svg);
   display: inline-flex;
   width: 50px;
   justify-content: flex-end;
@@ -445,19 +445,19 @@ h1 {
   background-repeat: no-repeat;
 }
 .site-nav__item:first-child:hover {
-  background-image: url(../img/triangle.svg);
+  background-image: url(../../img/triangle.svg);
   background-position: left center;
 }
 .site-nav__item:nth-child(2):hover {
-  background-image: url(../img/square-blue.svg);
+  background-image: url(../../img/square-blue.svg);
   background-position: left center;
 }
 .site-nav__item:nth-child(3):hover {
-  background-image: url(../img/ellipse.svg);
+  background-image: url(../../img/ellipse.svg);
   background-position: left center;
 }
 .site-nav__item:nth-child(4):hover {
-  background-image: url(../img/square-yellow.svg);
+  background-image: url(../../img/square-yellow.svg);
   background-position: left center;
 }
 
@@ -491,19 +491,19 @@ h1 {
   background-repeat: no-repeat;
 }
 .site-nav-mobile .site-nav__item:first-child {
-  background-image: url(../img/triangle.svg);
+  background-image: url(../../img/triangle.svg);
   background-position: left center;
 }
 .site-nav-mobile .site-nav__item:nth-child(2) {
-  background-image: url(../img/square-blue.svg);
+  background-image: url(../../img/square-blue.svg);
   background-position: left center;
 }
 .site-nav-mobile .site-nav__item:nth-child(3) {
-  background-image: url(../img/ellipse.svg);
+  background-image: url(../../img/ellipse.svg);
   background-position: left center;
 }
 .site-nav-mobile .site-nav__item:nth-child(4) {
-  background-image: url(../img/square-yellow.svg);
+  background-image: url(../../img/square-yellow.svg);
   background-position: left center;
 }
 
@@ -605,7 +605,7 @@ h1 {
 }
 
 .promo__button::after {
-  content: url(../img/Line5.svg);
+  content: url(../../img/Line5.svg);
   position: absolute;
   bottom: -170px;
   left: 48%;
@@ -633,7 +633,7 @@ h1 {
 
   .promo__button::after {
     content: "";
-    background-image: url(../img/Line5.svg);
+    background-image: url(../../img/Line5.svg);
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
@@ -891,7 +891,7 @@ h1 {
   left: -92%;
   width: 280%;
   height: 140%;
-  background-image: url(../img/profession-arrows.svg);
+  background-image: url(../../img/profession-arrows.svg);
   background-repeat: no-repeat;
 }
 
@@ -919,7 +919,7 @@ h1 {
     left: 0%;
     width: 315px;
     height: 225px;
-    background-image: url(../img/profession-arrows-mobile.svg);
+    background-image: url(../../img/profession-arrows-mobile.svg);
     background-repeat: no-repeat;
   }
 }
@@ -944,7 +944,7 @@ h1 {
   left: 17%;
   width: 575px;
   height: 615px;
-  background-image: url(../img/course-and-books-arrows.svg);
+  background-image: url(../../img/course-and-books-arrows.svg);
   background-repeat: no-repeat;
 }
 
@@ -976,7 +976,7 @@ h1 {
     left: -8%;
     width: 325px;
     height: 320px;
-    background-image: url(../img/course-and-books-arrows-mobile.svg);
+    background-image: url(../../img/course-and-books-arrows-mobile.svg);
     background-repeat: no-repeat;
   }
 }
@@ -1002,7 +1002,7 @@ h1 {
   left: -44%;
   width: 348px;
   height: 228px;
-  background-image: url(../img/Group331.svg);
+  background-image: url(../../img/Group331.svg);
   background-repeat: no-repeat;
 }
 
@@ -1051,7 +1051,7 @@ h1 {
     height: 315px;
     bottom: -68%;
     left: 3%;
-    background-image: url(../img/project-arrows-mobile.svg);
+    background-image: url(../../img/project-arrows-mobile.svg);
     background-repeat: no-repeat;
   }
 }
@@ -1076,7 +1076,7 @@ h1 {
   left: 80%;
   width: 50px;
   height: 140px;
-  background-image: url(../img/work-arrow.svg);
+  background-image: url(../../img/work-arrow.svg);
   background-repeat: no-repeat;
 }
 
@@ -1117,18 +1117,18 @@ h1 {
   background-size: 70% 98%;
 }
 .proposal__content:first-child {
-  background-image: url(../img/triangle.svg);
+  background-image: url(../../img/triangle.svg);
 }
 .proposal__content:nth-child(2) {
-  background-image: url(../img/square-blue.svg);
+  background-image: url(../../img/square-blue.svg);
   background-size: 90% 100%;
   background-position-x: 1000%;
 }
 .proposal__content:nth-child(3) {
-  background-image: url(../img/ellipse.svg);
+  background-image: url(../../img/ellipse.svg);
 }
 .proposal__content:nth-child(4) {
-  background-image: url(../img/square-yellow.svg);
+  background-image: url(../../img/square-yellow.svg);
 }
 .proposal__content:hover {
   transition: background-position-x 2s;
