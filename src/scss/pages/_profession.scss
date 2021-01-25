@@ -1,0 +1,26 @@
+.profession{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.professional-video{
+    width: 50%;
+}
+.profession_button{
+    width: 50%;
+}
+.button_profession{
+    border: none;
+    font-family: 'Anonymous-bold';
+    font-size: 2rem;
+    line-height: 2;
+    padding: 0 10px;
+    background-color: white;
+}
+.button_profession:active{
+    color: $color-element-red;
+    border: none;
+}
+.button_profession:focus{
+    outline: none;
+}
