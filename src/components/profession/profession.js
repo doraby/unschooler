@@ -9,7 +9,7 @@ const Profession = (props) => {
   return (
     <div className="profession">
       <ProfessionLogo />
-      <ProfessionVideo />
+      <ProfessionVideo professionSelected={props.professionSelected}/>
       <ProfessionList {...other} />
       <NavLink className="button button_large" to="/courses">Перейти к курсам</NavLink>
     </div>
