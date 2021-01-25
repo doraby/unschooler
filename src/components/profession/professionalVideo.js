@@ -1,13 +1,15 @@
 import React from 'react';
-import { Player } from 'video-react';
+import video1 from './../../video/CuteCat.mp4'
+
 
 
 const ProfessionVideo = () => {
   return (
     <div>
-      <Player
-        url="https://youtu.be/7sDY4m8KNLc"
-      />
+      <iframe
+        title='video'
+        src={video1}
+      ></iframe>
     </div>
   );
 }

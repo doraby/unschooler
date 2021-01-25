@@ -3,7 +3,7 @@ import React from 'react';
 const ProfessionSelect = (props) => {
   const {professionSelected} = props;
   return (
-    <div>
+    <div className='profession_select'>
       {professionSelected}
     </div>
   );
