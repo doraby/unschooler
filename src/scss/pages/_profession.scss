@@ -16,10 +16,11 @@
     line-height: 2;
     padding: 0 10px;
     background-color: white;
+    cursor: pointer;
 }
-.button_profession:active{
+.button_profession_active{
     color: $color-element-red;
-    border: none;
+    cursor: auto;
 }
 .button_profession:focus{
     outline: none;
