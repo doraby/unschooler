@@ -23,7 +23,7 @@ const Header = (props) => {
       <Nav />
       <NavMobile Show={active} onShowNav={handleChangeActive} />
     </header>
-    <ProfessionSelect {...other}/>
+    <ProfessionSelect  {...other}/>
     </>
   )
 }

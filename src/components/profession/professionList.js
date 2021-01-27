@@ -4,7 +4,7 @@ import React from 'react';
 const ProfessionList = (props) => {
   const {handleProfessionSelected} = props;
   return (
-    <div className="profession_button">
+    <div className="profession-button">
       <button className="button_profession" onClick={() => handleProfessionSelected('Web-дизайнер')}>Web-дизайнер</button>
       <button className="button_profession" onClick={() => handleProfessionSelected('HTML&CSS')}>HTML&CSS</button>
       <button className="button_profession" onClick={() => handleProfessionSelected('Frontend-Программист')}>Frontend-Программист</button>

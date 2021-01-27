@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const ProfessionLogo = ()  => {
   return (
-      <div className="profession__content">
+      <div className="profession__content profession-logo">
         <h2>
           <NavLink className="icon icon_profession" to="/profession">
             <span className="visually-hidden">Профессия</span>

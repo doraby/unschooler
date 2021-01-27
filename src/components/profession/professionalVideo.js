@@ -26,7 +26,7 @@ const ProfessionVideo = (props) => {
   }
 
   return (
-    <div className='professional-video'>
+    <div className='profession-video'>
       <iframe
         title='video'
         src={defineVideo(professionSelected)}
