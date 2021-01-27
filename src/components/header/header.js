@@ -23,7 +23,7 @@ const Header = (props) => {
       <Nav />
       <NavMobile Show={active} onShowNav={handleChangeActive} />
     </header>
-    <ProfessionSelect className="profession-select" {...other}/>
+    <ProfessionSelect  {...other}/>
     </>
   )
 }

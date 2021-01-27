@@ -10,7 +10,7 @@ const Profession = (props) => {
     <div className="profession">
       <ProfessionLogo />
       <ProfessionVideo professionSelected={props.professionSelected}/>
-      <ProfessionList {...other} />
+      <ProfessionList  {...other} />
       <NavLink className="button button_large" to="/courses">Перейти к курсам</NavLink>
     </div>
   );

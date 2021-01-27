@@ -3,25 +3,58 @@
     justify-content: space-around;
     flex-wrap: wrap;
 }
-.professional-video{
-    width: 50%;
+.profession_select{
+   font-family: 'Anonymous-bold';
+   font-size: 2rem;
+   line-height: 1.5;
+   position: absolute;
+   top: 30px;
+   left: 1000px;
 }
-.profession_button{
-    width: 50%;
+.profession-logo{
+    // width: 45%;
+    margin-left: 20px;
 }
+.profession-video{
+    // width: 45%;
+}
+//поменял нижнее подчект на середину
+.profession-button{
+    max-width: 70rem;
+    margin-left: 7rem;
+    min-width: 33rem;
+    // text-align: right;
+    // width: 80rem;
+
+}
+// .width100{
+//     flex-direction: column;
+//     margin: 1rem 0;
+// }
 .button_profession{
     border: none;
     font-family: 'Anonymous-bold';
     font-size: 2rem;
-    line-height: 2;
+    line-height: 1.5;
     padding: 0 10px;
     background-color: white;
     cursor: pointer;
 }
-.button_profession_active{
+
+.button_profession__active{
     color: $color-element-red;
     cursor: auto;
 }
 .button_profession:focus{
     outline: none;
+}
+@media (max-width: 1188px){
+    .profession_select{
+        left: 900px;
+        }
+}
+@media (max-width: $phone-width){
+    .profession_select{
+        left: 100px;
+        }
 }
