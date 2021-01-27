@@ -40,7 +40,8 @@
     background-color: white;
     cursor: pointer;
 }
-.button_profession:active{
+
+.button_profession__active{
     color: $color-element-red;
     cursor: auto;
 }
