@@ -15,7 +15,6 @@ const App = () => {
 
   const [professionSelected, setProfessionSelected] = useState();
   const handleProfessionSelected = (a) => {
-    console.log(a)
     setProfessionSelected(a);
   }
 
