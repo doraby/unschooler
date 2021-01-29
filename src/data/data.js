@@ -1,0 +1,48 @@
+let CoursesCardData = [
+    { id: 1,
+      difficult: 'Легко',
+      author: 'Coursera',
+      title: 'UX/UI research',
+      direction: ['Web-дизайнер'],
+      checked: false,
+      img: '',
+    },
+    { id: 2,
+      difficult: 'Легко',
+      author: 'Coursera',
+      title: 'User testing',
+      direction: ['Web-дизайнер', 'HTML&CSS'],
+      checked: false,
+      img: '',
+    },
+    { id: 3,
+      difficult: 'Легко',
+      author: 'Coursera',
+      title: 'Работа с Figma',
+      direction: ['Web-дизайнер', 'HTML&CSS', 'Frontend-Программист'],
+      checked: false,
+      img: '',
+    },
+    { id: 4,
+      difficult: 'Легко',
+      author: 'Книга',
+      title: 'Книги Чихольда по типографике',
+      direction: ['Web-дизайнер', 'HTML&CSS'],
+      checked: false,
+      img: './../../img/imageChihold.png',
+    },
+    { id: 5,
+      difficult: 'Легко',
+      author: 'Книга Райана Зингера',
+      title: 'Shape up',
+      direction: ['Web-дизайнер', 'Frontend-Программист'],
+      checked: false,
+      img: './../../img/imageZinger.png',
+    },
+  ];
+export {CoursesCardData};
+
+const chengeCheckCoursesCardData = (i=0) => {
+  CoursesCardData[i].checked = !CoursesCardData[i].checked
+}
+export {chengeCheckCoursesCardData};

@@ -6,10 +6,10 @@ const NavMobile = ({Show, onShowNav}) => {
     return (
     <nav className={classNames('nav-mobile', {'show': Show})}>
       <ul className="site-nav-mobile">
-        <li className="site-nav__item"><NavLink className="site-nav__link" to="/profession">профессия</NavLink></li>
-        <li className="site-nav__item"><NavLink className="site-nav__link" to="/courses">курсы</NavLink></li>
-        <li className="site-nav__item"><NavLink className="site-nav__link" to="/projects">проекты</NavLink></li>
-        <li className="site-nav__item"><NavLink className="site-nav__link" to="/test">работа</NavLink></li>
+        <li className="site-nav__item"><NavLink className="site-nav__link" to="/profession" onClick={onShowNav}>профессия</NavLink></li>
+        <li className="site-nav__item"><NavLink className="site-nav__link" to="/courses" onClick={onShowNav}>курсы</NavLink></li>
+        <li className="site-nav__item"><NavLink className="site-nav__link" to="/projects" onClick={onShowNav}>проекты</NavLink></li>
+        <li className="site-nav__item"><NavLink className="site-nav__link" to="/test" onClick={onShowNav}>работа</NavLink></li>
       </ul>
       <ul className="user-nav-mobile">
         <li className="user-nav__item"><NavLink className="user-nav__link" to="/">Войти</NavLink></li>

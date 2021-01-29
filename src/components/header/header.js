@@ -4,7 +4,6 @@ import Burger from "./burger";
 import HeaderLogo from "./headerLogo";
 import Nav from "./nav";
 import NavMobile from "./nav-mobile";
-//import {setProfessionSelect} from './../../scripts/scripts';
 
 const Header = (props) => {
 
