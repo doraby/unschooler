@@ -1,5 +1,4 @@
 import React from 'react';
-import MainProposal from '../main/main-proposal';
 import CoursesIntro from './coursesIntro';
 import CoursesList from './coursesList';
 import CoursesOutro from './coursesOutro';

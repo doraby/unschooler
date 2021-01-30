@@ -5,7 +5,7 @@ let CoursesCardData = [
       title: 'UX/UI research',
       direction: ['Web-дизайнер'],
       checked: false,
-      img: '',
+      
     },
     { id: 2,
       difficult: 'Легко',
@@ -13,7 +13,7 @@ let CoursesCardData = [
       title: 'User testing',
       direction: ['Web-дизайнер', 'HTML&CSS'],
       checked: false,
-      img: '',
+      
     },
     { id: 3,
       difficult: 'Легко',
@@ -21,7 +21,7 @@ let CoursesCardData = [
       title: 'Работа с Figma',
       direction: ['Web-дизайнер', 'HTML&CSS', 'Frontend-Программист'],
       checked: false,
-      img: '',
+      
     },
     { id: 4,
       difficult: 'Легко',
@@ -29,7 +29,7 @@ let CoursesCardData = [
       title: 'Книги Чихольда по типографике',
       direction: ['Web-дизайнер', 'HTML&CSS'],
       checked: false,
-      img: './../../img/imageChihold.png',
+      imgURL: './../../img/imageChihold.png',
     },
     { id: 5,
       difficult: 'Легко',
@@ -37,12 +37,12 @@ let CoursesCardData = [
       title: 'Shape up',
       direction: ['Web-дизайнер', 'Frontend-Программист'],
       checked: false,
-      img: './../../img/imageZinger.png',
+      imgURL: 'https://www.imgonline.com.ua/examples/bee-on-daisy.jpg',
     },
   ];
 export {CoursesCardData};
 
-const chengeCheckCoursesCardData = (i=0) => {
-  CoursesCardData[i].checked = !CoursesCardData[i].checked
+const chengeCheckCoursesCardData = (i) => {
+  CoursesCardData[i-1].checked = !CoursesCardData[i].checked
 }
 export {chengeCheckCoursesCardData};
