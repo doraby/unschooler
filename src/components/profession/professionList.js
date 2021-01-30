@@ -10,7 +10,7 @@ const ProfessionList = (props) => {
   }
   
   return (
-    <div className="profession_button">
+    <div className="profession-button">
       <button className={defineProfessionButtonClass('Web-дизайнер')}
               onClick={() => handleProfessionSelected('Web-дизайнер')}>Web-дизайнер
       </button>
