@@ -1,36 +1,55 @@
 .profession{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
+    min-height: calc(100vh - 80px);
 }
+.profession_second-block{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 10rem;
+    // width: 100%;
+}
+//надпись в абсолюте
 .profession_select{
    font-family: 'Anonymous-bold';
    font-size: 2rem;
    line-height: 1.5;
    position: absolute;
    top: 30px;
-   left: 1000px;
+   right: 10rem;
+//    left: 1000px;
 }
+
+.profession_strelka{
+    position: relative;
+    top: 20rem;
+    left: 1rem;
+    width: 4rem;
+    height: 7rem;
+    // margin: 15rem 3rem;
+}
+//красный треугольник
 .profession-logo{
     // width: 45%;
-    margin-left: 20px;
+    
 }
-.profession-video{
-    // width: 45%;
-}
-//поменял нижнее подчект на середину
-.profession-button{
-    max-width: 70rem;
-    margin-left: 7rem;
-    min-width: 33rem;
-    // text-align: right;
-    // width: 80rem;
+.profession_video{
+    height: 30rem;
+    // margin-left: 20rem;
+    // width: 60rem;
 
 }
-// .width100{
-//     flex-direction: column;
-//     margin: 1rem 0;
-// }
+//доп класс button для width
+.profession_btn{
+    
+}
+.profession-button{
+    max-width: 70rem;
+    padding: 3rem 0;
+}
+
 .button_profession{
     border: none;
     font-family: 'Anonymous-bold';
@@ -48,13 +67,94 @@
 .button_profession:focus{
     outline: none;
 }
-@media (max-width: 1188px){
-    .profession_select{
-        left: 900px;
-        }
+@media(max-width:144rem){
+    .profession-logo{
+        margin-left: 20rem;
+    }
+    .profession_second-block{
+        margin: 0rem 6rem;
+    }
+    .profession_strelka{
+        left: 70rem;
+    }
 }
+
+@media(max-width: 138rem){
+    .profession-logo{
+        margin-left: 20rem;
+    }
+    .profession_second-block{
+        margin: 0rem 6rem;
+    }
+    .profession_strelka{
+        left: 81rem;
+    }
+}
+
+@media (max-width:$tablet-width){
+    
+    .profession-logo{
+        margin-left: 10rem;
+        padding: 0rem 5.2rem;
+    }
+    .profession_second-block{
+        margin: 2rem 4rem;
+    }
+    .profession_strelka{
+        left: -11rem;
+    }
+  
+    .profession_select{
+        left: 90rem;
+    }  
+
+}
+
 @media (max-width: $phone-width){
+    .profession-logo{
+        margin-left: 2rem;
+        padding: 0rem 5.2rem;
+    }
+    .profession_second-block{
+        margin: 0;
+    }
+    .profession_strelka{
+        left: -20rem;
+        top: 13rem;
+        width: 1.5rem;
+        height: 3rem;
+    }
     .profession_select{
         left: 100px;
         }
+ 
+  
+ 
+    
 }
+@media (max-width:780px){
+    .profession_strelka{
+        left: -20rem;
+        top: 13rem;
+        width: 1.5rem;
+        height: 3rem;
+    }
+}
+@media (max-width:570px){
+    .profession_strelka{
+        left: -10rem;
+        top: 13rem;
+        width: 1.5rem;
+        height: 3rem;
+    }
+}
+@media (max-width:450px){
+    .profession_strelka{
+        left:-3rem;
+        top: 13rem;
+        width: 1.5rem;
+        height: 3rem;
+    }
+}
+
+
