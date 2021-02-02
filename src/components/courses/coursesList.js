@@ -7,14 +7,15 @@ const CoursesList = (props) => {
     let {imgURL} = cardData;
     let courses_card__bg = {
       backgroundImage: "url('"+imgURL+"')",
-      backgroundPosition: '30%',
+      backgroundPosition: 0.3,
       backgroundSize: 'auto 100%',
+      opacity: 0.7,
     }
     
     if (cardData.direction.includes(professionSelected))
     return (
       <div>
-        <div className='courses_card' style={courses_card__bg} /*{...imgURL ? 'style='+{courses_card__bg} : {}}*/>
+        <div className='courses_card' style={courses_card__bg} /*{imgURL ? 'style='+{courses_card__bg}}*/>
           <div>{cardData.difficult}</div>
           <div>{cardData.author}</div>
           <div>{cardData.title}</div>

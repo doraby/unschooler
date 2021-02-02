@@ -5,6 +5,7 @@ import Header from './components/header/header';
 import Main from './components/main/main';
 import Sidebar from './components/main/sidebar';
 import Profession from './components/profession/profession';
+//import ReactDOM from "react-dom";
 import { BrowserRouter, Route,  useLocation } from 'react-router-dom';
 import Courses from './components/courses/courses';
 import Projects from './components/projects/projects';
@@ -13,11 +14,12 @@ import { CoursesCardData, chengeCheckCoursesCardData } from './data/data';
 
 
 const App = () => {
+  //let location = useLocation();
   const [professionSelected, setProfessionSelected] = useState();
   const handleProfessionSelected = (a) => {
     setProfessionSelected(a);
   }
-
+//console.log(location.pathname)
   return (
     <BrowserRouter>
     <>

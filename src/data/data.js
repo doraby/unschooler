@@ -43,6 +43,6 @@ let CoursesCardData = [
 export {CoursesCardData};
 
 const chengeCheckCoursesCardData = (i) => {
-  CoursesCardData[i-1].checked = !CoursesCardData[i].checked
+  (CoursesCardData[i-1].checked === undefined) ? CoursesCardData[i-1].checked = 'checked' : CoursesCardData[i-1].checked = undefined;
 }
 export {chengeCheckCoursesCardData};
