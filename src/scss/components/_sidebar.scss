@@ -21,6 +21,15 @@
 .social__button {
     padding: 15px 0;
 }
+@media(max-width:$tablet-width){
+    .sidebar{
+        top: 4.5%;
+        left: 0;
+        width: 4.5%;
+        height: 53% - 5.5%;
+        border-bottom: 3px solid $color-main-color-dark;
+    }
+}
 
 @media (max-width: $phone-width) {
     .sidebar {
