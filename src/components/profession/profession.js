@@ -9,7 +9,7 @@ const Profession = (props) => {
   const {...other} = props;
   return (
     <div className="profession">
-      <ProfessionLogo />
+      <ProfessionLogo/>;
       <NavLink className='profession_strelka' to="/courses"><img  src={StrelkaRight} alt=""/></NavLink>
       
       <div className="profession_second-block"> 
