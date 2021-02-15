@@ -27,6 +27,13 @@
     height: 7rem;
 
 }
+.profession_strelka-left{
+    position: absolute;
+    left: 6%;
+    top: 22%;
+    width: 4rem;
+    height: 7rem;
+}
 
 .profession_video{
     height: 30rem;
@@ -35,6 +42,7 @@
 .profession_btn{
     width: fit-content;
 }
+//
 .profession-button{
     max-width: 70rem;
     padding: 3rem 0;
@@ -59,27 +67,35 @@
     outline: none;
 }
 @media(max-width:144rem){
+    .profession{
+        justify-content: center;
+    }
     .profession-logo{
         margin-left: 20rem;
     }
     .profession_second-block{
         margin: 0rem 10rem;
     }
+    .profession_btn{
+        margin-bottom: 4rem;
+    }
 }
 
 
 @media (max-width:$tablet-width){
-    
+    .profession{
+        justify-content: center;
+    }
     .profession-logo{
-        margin-left: 10rem;
-        padding: 0rem 5.2rem;
+        margin-left: 0rem;
+        
     }
-    .profession_second-block{
-        margin: 0rem 8rem;
-    }
+    // .profession_second-block{
+    //     margin: 0rem 8rem;
+    // }
     .profession_video{
-        width: 54rem;
-        height: 30rem;
+        width: 100%;
+        // height: 30rem;
     }
     .profession-button{
         max-width: 50rem;
@@ -88,27 +104,35 @@
         font-size: 2rem;
         line-height: 2;
     }
+    .profession_btn{
+        margin-bottom: 3rem;
+    }
 
 }
 
 @media (max-width: $phone-width){
-    .profession_second-block{
-        align-items: center;
+    .profession{
+        justify-content: center;
     }
+
     .profession-logo{
         // margin-left: 2rem;
-        padding: 0rem 5.2rem;
-    }
-    .profession_second-block{
-        margin: 0;
+        // padding: 0rem 5.2rem;
+
     }
     .profession_video{
-        width: 31rem;
-        height: 17rem;
+        width: 100%;
     } 
     .button_profession{
         font-size: 2rem;
         line-height: 2;
     }
-    
+    .profession_btn{
+        margin-bottom: 2rem;
+    }
+    .profession_select{
+        top: 5%;
+        left: 20%;
+        width: 10rem;
+    }
 }

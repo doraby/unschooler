@@ -151,7 +151,11 @@
 }
 
 
-
+@media(max-width:$tablet-width){
+    .site-nav__item,.user-nav__item{
+        padding: 0px 0%;
+    }
+}
 
 @media (max-width: $phone-width) {
     .nav {
